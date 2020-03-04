@@ -7,200 +7,180 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F9EE1EF240F256700FEB634 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9EE1E5240F256700FEB634 /* Network.framework */; };
-		2F9EE1F4240F256700FEB634 /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE1F3240F256700FEB634 /* NetworkTests.swift */; };
-		2F9EE1F6240F256700FEB634 /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F9EE1E8240F256700FEB634 /* Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F9EE29B240F281600FEB634 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE29A240F281600FEB634 /* HttpRequest.swift */; };
-		2F9EE29D240F283100FEB634 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE29C240F283100FEB634 /* HttpMethod.swift */; };
-		2F9EE2F1240F2A4100FEB634 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE2F0240F2A4100FEB634 /* RequestError.swift */; };
-		2F9EE2F4240F2AA300FEB634 /* RequestSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE2F3240F2AA300FEB634 /* RequestSetup.swift */; };
-		2F9EE320240F479300FEB634 /* CriptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE31F240F479300FEB634 /* CriptoCurrency.swift */; };
-		2F9EE322240F491900FEB634 /* DateDecodeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE321240F491900FEB634 /* DateDecodeStrategy.swift */; };
-		2F9EE325240F4A3000FEB634 /* CriptoCurrencyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE324240F4A3000FEB634 /* CriptoCurrencyRequest.swift */; };
+		2F9EE2E0240F298200FEB634 /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9EE2D6240F298200FEB634 /* Resources.framework */; };
+		2F9EE2E5240F298200FEB634 /* ResourcesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE2E4240F298200FEB634 /* ResourcesTests.swift */; };
+		2F9EE2E7240F298200FEB634 /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F9EE2D9240F298200FEB634 /* Resources.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F9EE2F8240F2CFF00FEB634 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F9EE2F7240F2CFF00FEB634 /* Color.xcassets */; };
+		2F9EE30B240F385A00FEB634 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE30A240F385A00FEB634 /* UIColor+Extensions.swift */; };
+		2F9EE30D240F399500FEB634 /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE30C240F399500FEB634 /* Spacing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2F9EE1F0240F256700FEB634 /* PBXContainerItemProxy */ = {
+		2F9EE2E1240F298200FEB634 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2F9EE1DC240F256700FEB634 /* Project object */;
+			containerPortal = 2F9EE2CD240F298200FEB634 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2F9EE1E4240F256700FEB634;
-			remoteInfo = Network;
+			remoteGlobalIDString = 2F9EE2D5240F298200FEB634;
+			remoteInfo = Resources;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2F9EE1E5240F256700FEB634 /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F9EE1E8240F256700FEB634 /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
-		2F9EE1E9240F256700FEB634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F9EE1EE240F256700FEB634 /* NetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F9EE1F3240F256700FEB634 /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
-		2F9EE1F5240F256700FEB634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F9EE29A240F281600FEB634 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
-		2F9EE29C240F283100FEB634 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
-		2F9EE2F0240F2A4100FEB634 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
-		2F9EE2F3240F2AA300FEB634 /* RequestSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSetup.swift; sourceTree = "<group>"; };
-		2F9EE31F240F479300FEB634 /* CriptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriptoCurrency.swift; sourceTree = "<group>"; };
-		2F9EE321240F491900FEB634 /* DateDecodeStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDecodeStrategy.swift; sourceTree = "<group>"; };
-		2F9EE324240F4A3000FEB634 /* CriptoCurrencyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriptoCurrencyRequest.swift; sourceTree = "<group>"; };
+		2F9EE2D6240F298200FEB634 /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9EE2D9240F298200FEB634 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Resources.h; sourceTree = "<group>"; };
+		2F9EE2DA240F298200FEB634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F9EE2DF240F298200FEB634 /* ResourcesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResourcesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9EE2E4240F298200FEB634 /* ResourcesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesTests.swift; sourceTree = "<group>"; };
+		2F9EE2E6240F298200FEB634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F9EE2F7240F2CFF00FEB634 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		2F9EE30A240F385A00FEB634 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		2F9EE30C240F399500FEB634 /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2F9EE1E2240F256700FEB634 /* Frameworks */ = {
+		2F9EE2D3240F298200FEB634 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F9EE1EB240F256700FEB634 /* Frameworks */ = {
+		2F9EE2DC240F298200FEB634 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F9EE1EF240F256700FEB634 /* Network.framework in Frameworks */,
+				2F9EE2E0240F298200FEB634 /* Resources.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F9EE1DB240F256700FEB634 = {
+		2F9EE2CC240F298200FEB634 = {
 			isa = PBXGroup;
 			children = (
-				2F9EE1E7240F256700FEB634 /* Network */,
-				2F9EE1F2240F256700FEB634 /* NetworkTests */,
-				2F9EE1E6240F256700FEB634 /* Products */,
+				2F9EE2D7240F298200FEB634 /* Products */,
+				2F9EE2D8240F298200FEB634 /* Resources */,
+				2F9EE2E3240F298200FEB634 /* ResourcesTests */,
 			);
 			sourceTree = "<group>";
 		};
-		2F9EE1E6240F256700FEB634 /* Products */ = {
+		2F9EE2D7240F298200FEB634 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F9EE1E5240F256700FEB634 /* Network.framework */,
-				2F9EE1EE240F256700FEB634 /* NetworkTests.xctest */,
+				2F9EE2D6240F298200FEB634 /* Resources.framework */,
+				2F9EE2DF240F298200FEB634 /* ResourcesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2F9EE1E7240F256700FEB634 /* Network */ = {
+		2F9EE2D8240F298200FEB634 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2F9EE323240F4A0E00FEB634 /* Request */,
-				2F9EE31E240F478200FEB634 /* Model */,
-				2F9EE299240F27FE00FEB634 /* Connection */,
-				2F9EE1E8240F256700FEB634 /* Network.h */,
-				2F9EE1E9240F256700FEB634 /* Info.plist */,
+				2F9EE309240F383E00FEB634 /* Collections */,
+				2F9EE2F6240F2CEB00FEB634 /* Assets */,
+				2F9EE2D9240F298200FEB634 /* Resources.h */,
+				2F9EE2DA240F298200FEB634 /* Info.plist */,
 			);
-			path = Network;
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		2F9EE1F2240F256700FEB634 /* NetworkTests */ = {
+		2F9EE2E3240F298200FEB634 /* ResourcesTests */ = {
 			isa = PBXGroup;
 			children = (
-				2F9EE1F3240F256700FEB634 /* NetworkTests.swift */,
-				2F9EE1F5240F256700FEB634 /* Info.plist */,
+				2F9EE2E4240F298200FEB634 /* ResourcesTests.swift */,
+				2F9EE2E6240F298200FEB634 /* Info.plist */,
 			);
-			path = NetworkTests;
+			path = ResourcesTests;
 			sourceTree = "<group>";
 		};
-		2F9EE299240F27FE00FEB634 /* Connection */ = {
+		2F9EE2F6240F2CEB00FEB634 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				2F9EE29A240F281600FEB634 /* HttpRequest.swift */,
-				2F9EE29C240F283100FEB634 /* HttpMethod.swift */,
-				2F9EE2F0240F2A4100FEB634 /* RequestError.swift */,
-				2F9EE2F3240F2AA300FEB634 /* RequestSetup.swift */,
-				2F9EE321240F491900FEB634 /* DateDecodeStrategy.swift */,
+				2F9EE2F7240F2CFF00FEB634 /* Color.xcassets */,
 			);
-			path = Connection;
+			path = Assets;
 			sourceTree = "<group>";
 		};
-		2F9EE31E240F478200FEB634 /* Model */ = {
+		2F9EE309240F383E00FEB634 /* Collections */ = {
 			isa = PBXGroup;
 			children = (
-				2F9EE31F240F479300FEB634 /* CriptoCurrency.swift */,
+				2F9EE30A240F385A00FEB634 /* UIColor+Extensions.swift */,
+				2F9EE30C240F399500FEB634 /* Spacing.swift */,
 			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		2F9EE323240F4A0E00FEB634 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				2F9EE324240F4A3000FEB634 /* CriptoCurrencyRequest.swift */,
-			);
-			path = Request;
+			path = Collections;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2F9EE1E0240F256700FEB634 /* Headers */ = {
+		2F9EE2D1240F298200FEB634 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F9EE1F6240F256700FEB634 /* Network.h in Headers */,
+				2F9EE2E7240F298200FEB634 /* Resources.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2F9EE1E4240F256700FEB634 /* Network */ = {
+		2F9EE2D5240F298200FEB634 /* Resources */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F9EE1F9240F256700FEB634 /* Build configuration list for PBXNativeTarget "Network" */;
+			buildConfigurationList = 2F9EE2EA240F298200FEB634 /* Build configuration list for PBXNativeTarget "Resources" */;
 			buildPhases = (
-				2F9EE1E0240F256700FEB634 /* Headers */,
-				2F9EE1E1240F256700FEB634 /* Sources */,
-				2F9EE1E2240F256700FEB634 /* Frameworks */,
-				2F9EE1E3240F256700FEB634 /* Resources */,
+				2F9EE2D1240F298200FEB634 /* Headers */,
+				2F9EE2D2240F298200FEB634 /* Sources */,
+				2F9EE2D3240F298200FEB634 /* Frameworks */,
+				2F9EE2D4240F298200FEB634 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Network;
-			productName = Network;
-			productReference = 2F9EE1E5240F256700FEB634 /* Network.framework */;
+			name = Resources;
+			productName = Resources;
+			productReference = 2F9EE2D6240F298200FEB634 /* Resources.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2F9EE1ED240F256700FEB634 /* NetworkTests */ = {
+		2F9EE2DE240F298200FEB634 /* ResourcesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F9EE1FC240F256700FEB634 /* Build configuration list for PBXNativeTarget "NetworkTests" */;
+			buildConfigurationList = 2F9EE2ED240F298200FEB634 /* Build configuration list for PBXNativeTarget "ResourcesTests" */;
 			buildPhases = (
-				2F9EE1EA240F256700FEB634 /* Sources */,
-				2F9EE1EB240F256700FEB634 /* Frameworks */,
-				2F9EE1EC240F256700FEB634 /* Resources */,
+				2F9EE2DB240F298200FEB634 /* Sources */,
+				2F9EE2DC240F298200FEB634 /* Frameworks */,
+				2F9EE2DD240F298200FEB634 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2F9EE1F1240F256700FEB634 /* PBXTargetDependency */,
+				2F9EE2E2240F298200FEB634 /* PBXTargetDependency */,
 			);
-			name = NetworkTests;
-			productName = NetworkTests;
-			productReference = 2F9EE1EE240F256700FEB634 /* NetworkTests.xctest */;
+			name = ResourcesTests;
+			productName = ResourcesTests;
+			productReference = 2F9EE2DF240F298200FEB634 /* ResourcesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2F9EE1DC240F256700FEB634 /* Project object */ = {
+		2F9EE2CD240F298200FEB634 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Matheus Cardoso Kuhn";
 				TargetAttributes = {
-					2F9EE1E4240F256700FEB634 = {
+					2F9EE2D5240F298200FEB634 = {
 						CreatedOnToolsVersion = 11.3.1;
 						LastSwiftMigration = 1130;
 					};
-					2F9EE1ED240F256700FEB634 = {
+					2F9EE2DE240F298200FEB634 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 2F9EE1DF240F256700FEB634 /* Build configuration list for PBXProject "Network" */;
+			buildConfigurationList = 2F9EE2D0240F298200FEB634 /* Build configuration list for PBXProject "Resources" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -208,26 +188,27 @@
 				en,
 				Base,
 			);
-			mainGroup = 2F9EE1DB240F256700FEB634;
-			productRefGroup = 2F9EE1E6240F256700FEB634 /* Products */;
+			mainGroup = 2F9EE2CC240F298200FEB634;
+			productRefGroup = 2F9EE2D7240F298200FEB634 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F9EE1E4240F256700FEB634 /* Network */,
-				2F9EE1ED240F256700FEB634 /* NetworkTests */,
+				2F9EE2D5240F298200FEB634 /* Resources */,
+				2F9EE2DE240F298200FEB634 /* ResourcesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2F9EE1E3240F256700FEB634 /* Resources */ = {
+		2F9EE2D4240F298200FEB634 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F9EE2F8240F2CFF00FEB634 /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F9EE1EC240F256700FEB634 /* Resources */ = {
+		2F9EE2DD240F298200FEB634 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -237,40 +218,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2F9EE1E1240F256700FEB634 /* Sources */ = {
+		2F9EE2D2240F298200FEB634 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F9EE320240F479300FEB634 /* CriptoCurrency.swift in Sources */,
-				2F9EE29D240F283100FEB634 /* HttpMethod.swift in Sources */,
-				2F9EE325240F4A3000FEB634 /* CriptoCurrencyRequest.swift in Sources */,
-				2F9EE322240F491900FEB634 /* DateDecodeStrategy.swift in Sources */,
-				2F9EE29B240F281600FEB634 /* HttpRequest.swift in Sources */,
-				2F9EE2F1240F2A4100FEB634 /* RequestError.swift in Sources */,
-				2F9EE2F4240F2AA300FEB634 /* RequestSetup.swift in Sources */,
+				2F9EE30B240F385A00FEB634 /* UIColor+Extensions.swift in Sources */,
+				2F9EE30D240F399500FEB634 /* Spacing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F9EE1EA240F256700FEB634 /* Sources */ = {
+		2F9EE2DB240F298200FEB634 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F9EE1F4240F256700FEB634 /* NetworkTests.swift in Sources */,
+				2F9EE2E5240F298200FEB634 /* ResourcesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2F9EE1F1240F256700FEB634 /* PBXTargetDependency */ = {
+		2F9EE2E2240F298200FEB634 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2F9EE1E4240F256700FEB634 /* Network */;
-			targetProxy = 2F9EE1F0240F256700FEB634 /* PBXContainerItemProxy */;
+			target = 2F9EE2D5240F298200FEB634 /* Resources */;
+			targetProxy = 2F9EE2E1240F298200FEB634 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2F9EE1F7240F256700FEB634 /* Debug */ = {
+		2F9EE2E8240F298200FEB634 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -333,7 +309,7 @@
 			};
 			name = Debug;
 		};
-		2F9EE1F8240F256700FEB634 /* Release */ = {
+		2F9EE2E9240F298200FEB634 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -390,7 +366,7 @@
 			};
 			name = Release;
 		};
-		2F9EE1FA240F256700FEB634 /* Debug */ = {
+		2F9EE2EB240F298200FEB634 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -400,14 +376,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Network/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MDT.Network;
+				PRODUCT_BUNDLE_IDENTIFIER = MDT.Resources;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -417,7 +393,7 @@
 			};
 			name = Debug;
 		};
-		2F9EE1FB240F256700FEB634 /* Release */ = {
+		2F9EE2EC240F298200FEB634 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -427,14 +403,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Network/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MDT.Network;
+				PRODUCT_BUNDLE_IDENTIFIER = MDT.Resources;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -443,38 +419,38 @@
 			};
 			name = Release;
 		};
-		2F9EE1FD240F256700FEB634 /* Debug */ = {
+		2F9EE2EE240F298200FEB634 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75Q35KU859;
-				INFOPLIST_FILE = NetworkTests/Info.plist;
+				INFOPLIST_FILE = ResourcesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MDT.NetworkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = MDT.ResourcesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2F9EE1FE240F256700FEB634 /* Release */ = {
+		2F9EE2EF240F298200FEB634 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75Q35KU859;
-				INFOPLIST_FILE = NetworkTests/Info.plist;
+				INFOPLIST_FILE = ResourcesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MDT.NetworkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = MDT.ResourcesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -484,34 +460,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F9EE1DF240F256700FEB634 /* Build configuration list for PBXProject "Network" */ = {
+		2F9EE2D0240F298200FEB634 /* Build configuration list for PBXProject "Resources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F9EE1F7240F256700FEB634 /* Debug */,
-				2F9EE1F8240F256700FEB634 /* Release */,
+				2F9EE2E8240F298200FEB634 /* Debug */,
+				2F9EE2E9240F298200FEB634 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F9EE1F9240F256700FEB634 /* Build configuration list for PBXNativeTarget "Network" */ = {
+		2F9EE2EA240F298200FEB634 /* Build configuration list for PBXNativeTarget "Resources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F9EE1FA240F256700FEB634 /* Debug */,
-				2F9EE1FB240F256700FEB634 /* Release */,
+				2F9EE2EB240F298200FEB634 /* Debug */,
+				2F9EE2EC240F298200FEB634 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F9EE1FC240F256700FEB634 /* Build configuration list for PBXNativeTarget "NetworkTests" */ = {
+		2F9EE2ED240F298200FEB634 /* Build configuration list for PBXNativeTarget "ResourcesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F9EE1FD240F256700FEB634 /* Debug */,
-				2F9EE1FE240F256700FEB634 /* Release */,
+				2F9EE2EE240F298200FEB634 /* Debug */,
+				2F9EE2EF240F298200FEB634 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2F9EE1DC240F256700FEB634 /* Project object */;
+	rootObject = 2F9EE2CD240F298200FEB634 /* Project object */;
 }

@@ -2,18 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Bit Market/Bit Market.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Currency/Currency.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Main/Main.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Network/Network.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Formatter/Formatter.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Color/Color.xcodeproj">
+      location = "group:Network/Network.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Resources/Resources.xcodeproj">
    </FileRef>
 </Workspace>
