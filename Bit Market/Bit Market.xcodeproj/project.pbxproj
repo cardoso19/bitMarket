@@ -12,8 +12,6 @@
 		2F9EE2B4240F290A00FEB634 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F9EE2B3240F290A00FEB634 /* Assets.xcassets */; };
 		2F9EE2B7240F290A00FEB634 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9EE2B5240F290A00FEB634 /* LaunchScreen.storyboard */; };
 		2F9EE2C2240F290A00FEB634 /* Bit_MarketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE2C1240F290A00FEB634 /* Bit_MarketTests.swift */; };
-		2F9EE2FF240F30CE00FEB634 /* Currency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9EE2FE240F30CE00FEB634 /* Currency.framework */; };
-		2F9EE300240F30CE00FEB634 /* Currency.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9EE2FE240F30CE00FEB634 /* Currency.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,13 +25,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2F9EE301240F30CF00FEB634 /* Embed Frameworks */ = {
+		2F57FDC9241043040038653B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2F9EE300240F30CE00FEB634 /* Currency.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,7 +47,6 @@
 		2F9EE2BD240F290A00FEB634 /* Bit MarketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bit MarketTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9EE2C1240F290A00FEB634 /* Bit_MarketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bit_MarketTests.swift; sourceTree = "<group>"; };
 		2F9EE2C3240F290A00FEB634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F9EE2FE240F30CE00FEB634 /* Currency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Currency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +54,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F9EE2FF240F30CE00FEB634 /* Currency.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +110,6 @@
 		2F9EE2FD240F30CE00FEB634 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2F9EE2FE240F30CE00FEB634 /* Currency.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,7 +124,7 @@
 				2F9EE2A3240F290800FEB634 /* Sources */,
 				2F9EE2A4240F290800FEB634 /* Frameworks */,
 				2F9EE2A5240F290800FEB634 /* Resources */,
-				2F9EE301240F30CF00FEB634 /* Embed Frameworks */,
+				2F57FDC9241043040038653B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -376,7 +370,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75Q35KU859;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Bit Market/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,7 +393,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75Q35KU859;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Bit Market/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

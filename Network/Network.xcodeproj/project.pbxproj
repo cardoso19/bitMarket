@@ -14,9 +14,12 @@
 		2F9EE29D240F283100FEB634 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE29C240F283100FEB634 /* HttpMethod.swift */; };
 		2F9EE2F1240F2A4100FEB634 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE2F0240F2A4100FEB634 /* RequestError.swift */; };
 		2F9EE2F4240F2AA300FEB634 /* RequestSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE2F3240F2AA300FEB634 /* RequestSetup.swift */; };
-		2F9EE320240F479300FEB634 /* CriptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE31F240F479300FEB634 /* CriptoCurrency.swift */; };
+		2F9EE320240F479300FEB634 /* CriptoCurrencyHistorical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE31F240F479300FEB634 /* CriptoCurrencyHistorical.swift */; };
 		2F9EE322240F491900FEB634 /* DateDecodeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE321240F491900FEB634 /* DateDecodeStrategy.swift */; };
 		2F9EE325240F4A3000FEB634 /* CriptoCurrencyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE324240F4A3000FEB634 /* CriptoCurrencyRequest.swift */; };
+		2F9EE327241023FC00FEB634 /* CurrencyRateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE326241023FC00FEB634 /* CurrencyRateRequest.swift */; };
+		2F9EE329241025E200FEB634 /* Currencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE328241025E200FEB634 /* Currencies.swift */; };
+		2F9EE32B241027F400FEB634 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE32A241027F400FEB634 /* Currency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F57FDF3241056F10038653B /* Formatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Formatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9EE1E5240F256700FEB634 /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9EE1E8240F256700FEB634 /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
 		2F9EE1E9240F256700FEB634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,9 +44,13 @@
 		2F9EE29C240F283100FEB634 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
 		2F9EE2F0240F2A4100FEB634 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 		2F9EE2F3240F2AA300FEB634 /* RequestSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSetup.swift; sourceTree = "<group>"; };
-		2F9EE31F240F479300FEB634 /* CriptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriptoCurrency.swift; sourceTree = "<group>"; };
+		2F9EE31F240F479300FEB634 /* CriptoCurrencyHistorical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriptoCurrencyHistorical.swift; sourceTree = "<group>"; };
 		2F9EE321240F491900FEB634 /* DateDecodeStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDecodeStrategy.swift; sourceTree = "<group>"; };
 		2F9EE324240F4A3000FEB634 /* CriptoCurrencyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriptoCurrencyRequest.swift; sourceTree = "<group>"; };
+		2F9EE326241023FC00FEB634 /* CurrencyRateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRateRequest.swift; sourceTree = "<group>"; };
+		2F9EE328241025E200FEB634 /* Currencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currencies.swift; sourceTree = "<group>"; };
+		2F9EE32A241027F400FEB634 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		2F9EE335241035B500FEB634 /* Formatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Formatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,7 @@
 				2F9EE1E7240F256700FEB634 /* Network */,
 				2F9EE1F2240F256700FEB634 /* NetworkTests */,
 				2F9EE1E6240F256700FEB634 /* Products */,
+				2F9EE334241035B500FEB634 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,7 +127,9 @@
 		2F9EE31E240F478200FEB634 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2F9EE31F240F479300FEB634 /* CriptoCurrency.swift */,
+				2F9EE31F240F479300FEB634 /* CriptoCurrencyHistorical.swift */,
+				2F9EE328241025E200FEB634 /* Currencies.swift */,
+				2F9EE32A241027F400FEB634 /* Currency.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -127,8 +138,18 @@
 			isa = PBXGroup;
 			children = (
 				2F9EE324240F4A3000FEB634 /* CriptoCurrencyRequest.swift */,
+				2F9EE326241023FC00FEB634 /* CurrencyRateRequest.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		2F9EE334241035B500FEB634 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F57FDF3241056F10038653B /* Formatter.framework */,
+				2F9EE335241035B500FEB634 /* Formatter.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,11 +262,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F9EE320240F479300FEB634 /* CriptoCurrency.swift in Sources */,
+				2F9EE320240F479300FEB634 /* CriptoCurrencyHistorical.swift in Sources */,
 				2F9EE29D240F283100FEB634 /* HttpMethod.swift in Sources */,
 				2F9EE325240F4A3000FEB634 /* CriptoCurrencyRequest.swift in Sources */,
 				2F9EE322240F491900FEB634 /* DateDecodeStrategy.swift in Sources */,
+				2F9EE327241023FC00FEB634 /* CurrencyRateRequest.swift in Sources */,
 				2F9EE29B240F281600FEB634 /* HttpRequest.swift in Sources */,
+				2F9EE32B241027F400FEB634 /* Currency.swift in Sources */,
+				2F9EE329241025E200FEB634 /* Currencies.swift in Sources */,
 				2F9EE2F1240F2A4100FEB634 /* RequestError.swift in Sources */,
 				2F9EE2F4240F2AA300FEB634 /* RequestSetup.swift in Sources */,
 			);
@@ -400,6 +424,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = Network/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -427,6 +452,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = Network/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (

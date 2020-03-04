@@ -12,9 +12,10 @@ extension JSONDecoder.DateDecodingStrategy {
     static let coindesk = custom { decoder throws -> Date in
         let container = try decoder.singleValueContainer()
         let string = try container.decode(String.self)
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        if let date = dateFormatter.date(from: string) {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.dateFormat = "yyyy-MM-dd"
+        if let date = formatter.date(from: string) {
             return date
         }
         throw DecodingError.dataCorruptedError(in: container, debugDescription: "Invalid date: \(string)")

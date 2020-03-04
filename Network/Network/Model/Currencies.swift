@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct Currencies: Codable {
-    let rates: [String: Double]
+public struct Currencies: Decodable {
+    public let rates: [Currency: Double]
 }

@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F57FDCB241048450038653B /* Double+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F57FDCA241048450038653B /* Double+Currency.swift */; };
 		2F9EE237240F258300FEB634 /* Formatter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9EE22D240F258300FEB634 /* Formatter.framework */; };
 		2F9EE23C240F258300FEB634 /* FormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE23B240F258300FEB634 /* FormatterTests.swift */; };
 		2F9EE23E240F258300FEB634 /* Formatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F9EE230240F258300FEB634 /* Formatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F9EE32E24102DB400FEB634 /* String+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE32D24102DB400FEB634 /* String+Formatter.swift */; };
+		2F9EE33024102E5700FEB634 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE32F24102E5700FEB634 /* Date+Formatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F57FDCA241048450038653B /* Double+Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Currency.swift"; sourceTree = "<group>"; };
+		2F57FDCD241048940038653B /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9EE22D240F258300FEB634 /* Formatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Formatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9EE230240F258300FEB634 /* Formatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Formatter.h; sourceTree = "<group>"; };
 		2F9EE231240F258300FEB634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F9EE236240F258300FEB634 /* FormatterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormatterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9EE23B240F258300FEB634 /* FormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterTests.swift; sourceTree = "<group>"; };
 		2F9EE23D240F258300FEB634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F9EE32D24102DB400FEB634 /* String+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Formatter.swift"; sourceTree = "<group>"; };
+		2F9EE32F24102E5700FEB634 /* Date+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +57,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F57FDCC241048940038653B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F57FDCD241048940038653B /* Network.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2F9EE223240F258300FEB634 = {
 			isa = PBXGroup;
 			children = (
 				2F9EE22F240F258300FEB634 /* Formatter */,
 				2F9EE23A240F258300FEB634 /* FormatterTests */,
 				2F9EE22E240F258300FEB634 /* Products */,
+				2F57FDCC241048940038653B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +87,7 @@
 		2F9EE22F240F258300FEB634 /* Formatter */ = {
 			isa = PBXGroup;
 			children = (
+				2F9EE32C24102DA400FEB634 /* Extension */,
 				2F9EE230240F258300FEB634 /* Formatter.h */,
 				2F9EE231240F258300FEB634 /* Info.plist */,
 			);
@@ -84,6 +101,16 @@
 				2F9EE23D240F258300FEB634 /* Info.plist */,
 			);
 			path = FormatterTests;
+			sourceTree = "<group>";
+		};
+		2F9EE32C24102DA400FEB634 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2F9EE32F24102E5700FEB634 /* Date+Formatter.swift */,
+				2F9EE32D24102DB400FEB634 /* String+Formatter.swift */,
+				2F57FDCA241048450038653B /* Double+Currency.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +175,7 @@
 				TargetAttributes = {
 					2F9EE22C240F258300FEB634 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					2F9EE235240F258300FEB634 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -195,6 +223,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F57FDCB241048450038653B /* Double+Currency.swift in Sources */,
+				2F9EE33024102E5700FEB634 /* Date+Formatter.swift in Sources */,
+				2F9EE32E24102DB400FEB634 /* String+Formatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +371,7 @@
 		2F9EE242240F258300FEB634 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 75Q35KU859;
@@ -357,6 +389,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -365,6 +398,7 @@
 		2F9EE243240F258300FEB634 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 75Q35KU859;
@@ -390,6 +424,7 @@
 		2F9EE245240F258300FEB634 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75Q35KU859;
 				INFOPLIST_FILE = FormatterTests/Info.plist;
@@ -408,6 +443,7 @@
 		2F9EE246240F258300FEB634 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75Q35KU859;
 				INFOPLIST_FILE = FormatterTests/Info.plist;
