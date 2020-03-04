@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Currency/Currency.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Main/Main.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Network/Network.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Formatter/Formatter.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Color/Color.xcodeproj">
+   </FileRef>
+</Workspace>
