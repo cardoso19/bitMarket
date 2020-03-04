@@ -1,5 +1,5 @@
 //
-//  CriptoCurrency.swift
+//  CriptoCurrencyHistorical.swift
 //  Network
 //
 //  Created by Matheus Cardoso Kuhn on 03/03/20.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct CriptoCurrency: Decodable {
-    let bpi: [Date: Double]
+public struct CriptoCurrencyHistorical: Decodable {
+    public let bpi: [Date: Double]
 }

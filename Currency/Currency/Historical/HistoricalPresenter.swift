@@ -7,9 +7,11 @@
 //
 
 import Foundation
+import Network
+import Formatter
 
 protocol HistoricalPresenting {
-    
+    func presentCriptoCurrencyHistorical(_ historical: [Date: Double])
 }
 
 final class HistoricalPresenter {
@@ -25,5 +27,12 @@ final class HistoricalPresenter {
 
 // MARK: - HistoricalPresenting
 extension HistoricalPresenter: HistoricalPresenting {
+    // MARK: - Historical
+    func presentCriptoCurrencyHistorical(_ historical: [Date: Double]) {
+        
+    }
     
+    private func formatValues(historical: [Date: Double]) -> [Date: String] {
+        return historical.compactMapValues({ $0.convert(withLocale: Currency.eur.locale) })
+    }
 }

@@ -10,7 +10,8 @@ import Foundation
 import Network
 
 protocol HistoricalServicing {
-    
+    func getCurrencyRates(base: Currency, completion: @escaping (Result<Currencies, RequestError>) -> Void)
+    func getCriptoCurrencyHistorical(fromDate start: String, toDate end: String, completion: @escaping (Result<CriptoCurrencyHistorical, RequestError>) -> Void)
 }
 
 final class HistoricalService {
@@ -27,5 +28,19 @@ final class HistoricalService {
 
 // MARK: - HistoricalServicing
 extension HistoricalService: HistoricalServicing {
+    func getCurrencyRates(base: Currency, completion: @escaping (Result<Currencies, RequestError>) -> Void) {
+        requester.request(with: CurrencyRateRequest.rate(base)) { [weak self] result in
+            self?.queue.async {
+                completion(result)
+            }
+        }
+    }
     
+    func getCriptoCurrencyHistorical(fromDate start: String, toDate end: String, completion: @escaping (Result<CriptoCurrencyHistorical, RequestError>) -> Void) {
+        requester.request(with: CriptoCurrencyRequest.list(start, end)) { [weak self] result in
+            self?.queue.async {
+                completion(result)
+            }
+        }
+    }
 }

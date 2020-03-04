@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F57FDE4241055CC0038653B /* Formatter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F57FDDA2410559B0038653B /* Formatter.framework */; };
+		2F57FDE5241055CC0038653B /* Formatter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F57FDDA2410559B0038653B /* Formatter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F57FDE7241055CE0038653B /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F57FDDE2410559F0038653B /* Network.framework */; };
+		2F57FDE8241055CE0038653B /* Network.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F57FDDE2410559F0038653B /* Network.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F57FDE9241055CF0038653B /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F57FDE1241055A40038653B /* Resources.framework */; };
+		2F57FDEA241055CF0038653B /* Resources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F57FDE1241055A40038653B /* Resources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2F9EE289240F267600FEB634 /* Currency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9EE27F240F267600FEB634 /* Currency.framework */; };
 		2F9EE28E240F267600FEB634 /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE28D240F267600FEB634 /* CurrencyTests.swift */; };
 		2F9EE290240F267600FEB634 /* Currency.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F9EE282240F267600FEB634 /* Currency.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F9EE2FC240F304000FEB634 /* HistoricalFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE2FB240F304000FEB634 /* HistoricalFactory.swift */; };
 		2F9EE303240F379E00FEB634 /* HistoricalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE302240F379E00FEB634 /* HistoricalViewController.swift */; };
-		2F9EE306240F382000FEB634 /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9EE305240F382000FEB634 /* Resources.framework */; };
-		2F9EE307240F382000FEB634 /* Resources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9EE305240F382000FEB634 /* Resources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2F9EE30F240F3B4800FEB634 /* HistoricalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE30E240F3B4800FEB634 /* HistoricalInteractor.swift */; };
 		2F9EE311240F3C0F00FEB634 /* HistoricalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE310240F3C0F00FEB634 /* HistoricalService.swift */; };
-		2F9EE313240F3DED00FEB634 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9EE312240F3DED00FEB634 /* Network.framework */; };
-		2F9EE314240F3DED00FEB634 /* Network.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9EE312240F3DED00FEB634 /* Network.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2F9EE316240F3DF400FEB634 /* Formatter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9EE315240F3DF400FEB634 /* Formatter.framework */; };
-		2F9EE317240F3DF400FEB634 /* Formatter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9EE315240F3DF400FEB634 /* Formatter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2F9EE319240F3E4600FEB634 /* HistoricalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE318240F3E4600FEB634 /* HistoricalPresenter.swift */; };
 		2F9EE31D240F3F0000FEB634 /* HistoricalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE31C240F3F0000FEB634 /* HistoricalRouter.swift */; };
 /* End PBXBuildFile section */
@@ -35,15 +35,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2F9EE308240F382000FEB634 /* Embed Frameworks */ = {
+		2F57FDE6241055CC0038653B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2F9EE307240F382000FEB634 /* Resources.framework in Embed Frameworks */,
-				2F9EE314240F3DED00FEB634 /* Network.framework in Embed Frameworks */,
-				2F9EE317240F3DF400FEB634 /* Formatter.framework in Embed Frameworks */,
+				2F57FDE5241055CC0038653B /* Formatter.framework in Embed Frameworks */,
+				2F57FDE8241055CE0038653B /* Network.framework in Embed Frameworks */,
+				2F57FDEA241055CF0038653B /* Resources.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +51,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2F57FDDA2410559B0038653B /* Formatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Formatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F57FDDE2410559F0038653B /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F57FDE1241055A40038653B /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9EE27F240F267600FEB634 /* Currency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Currency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9EE282240F267600FEB634 /* Currency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Currency.h; sourceTree = "<group>"; };
 		2F9EE283240F267600FEB634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,9 +66,9 @@
 		2F9EE30E240F3B4800FEB634 /* HistoricalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalInteractor.swift; sourceTree = "<group>"; };
 		2F9EE310240F3C0F00FEB634 /* HistoricalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalService.swift; sourceTree = "<group>"; };
 		2F9EE312240F3DED00FEB634 /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F9EE315240F3DF400FEB634 /* Formatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Formatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9EE318240F3E4600FEB634 /* HistoricalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalPresenter.swift; sourceTree = "<group>"; };
 		2F9EE31C240F3F0000FEB634 /* HistoricalRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalRouter.swift; sourceTree = "<group>"; };
+		2F9EE33124102F7100FEB634 /* Formatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Formatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F9EE306240F382000FEB634 /* Resources.framework in Frameworks */,
-				2F9EE313240F3DED00FEB634 /* Network.framework in Frameworks */,
-				2F9EE316240F3DF400FEB634 /* Formatter.framework in Frameworks */,
+				2F57FDE4241055CC0038653B /* Formatter.framework in Frameworks */,
+				2F57FDE7241055CE0038653B /* Network.framework in Frameworks */,
+				2F57FDE9241055CF0038653B /* Resources.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +147,10 @@
 		2F9EE304240F382000FEB634 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2F9EE315240F3DF400FEB634 /* Formatter.framework */,
+				2F57FDE1241055A40038653B /* Resources.framework */,
+				2F57FDDE2410559F0038653B /* Network.framework */,
+				2F57FDDA2410559B0038653B /* Formatter.framework */,
+				2F9EE33124102F7100FEB634 /* Formatter.framework */,
 				2F9EE312240F3DED00FEB634 /* Network.framework */,
 				2F9EE305240F382000FEB634 /* Resources.framework */,
 			);
@@ -173,7 +179,7 @@
 				2F9EE27B240F267600FEB634 /* Sources */,
 				2F9EE27C240F267600FEB634 /* Frameworks */,
 				2F9EE27D240F267600FEB634 /* Resources */,
-				2F9EE308240F382000FEB634 /* Embed Frameworks */,
+				2F57FDE6241055CC0038653B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

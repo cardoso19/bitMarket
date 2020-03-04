@@ -10,7 +10,7 @@ import UIKit
 import Resources
 
 protocol HistoricalDisplay: AnyObject {
-    
+//    func 
 }
 
 final class HistoricalViewController: UIViewController {
@@ -32,6 +32,7 @@ final class HistoricalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        interactor.updateCriptoCurrencyHistoricalList()
     }
 }
 

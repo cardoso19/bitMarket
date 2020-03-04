@@ -1,0 +1,11 @@
+framework module Resources {
+  umbrella header "Resources.h"
+
+  export *
+  module * { export * }
+}
+
+module Resources.Swift {
+    header "Resources-Swift.h"
+    requires objc
+}
