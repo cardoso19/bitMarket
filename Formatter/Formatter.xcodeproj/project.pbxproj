@@ -27,7 +27,6 @@
 
 /* Begin PBXFileReference section */
 		2F57FDCA241048450038653B /* Double+Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Currency.swift"; sourceTree = "<group>"; };
-		2F57FDCD241048940038653B /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9EE22D240F258300FEB634 /* Formatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Formatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9EE230240F258300FEB634 /* Formatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Formatter.h; sourceTree = "<group>"; };
 		2F9EE231240F258300FEB634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,21 +56,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F57FDCC241048940038653B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2F57FDCD241048940038653B /* Network.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		2F9EE223240F258300FEB634 = {
 			isa = PBXGroup;
 			children = (
 				2F9EE22F240F258300FEB634 /* Formatter */,
 				2F9EE23A240F258300FEB634 /* FormatterTests */,
 				2F9EE22E240F258300FEB634 /* Products */,
-				2F57FDCC241048940038653B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

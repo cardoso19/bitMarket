@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Network
+import Service
 import Formatter
 
 protocol HistoricalPresenting {

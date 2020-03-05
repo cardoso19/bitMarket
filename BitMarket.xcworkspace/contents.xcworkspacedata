@@ -11,9 +11,9 @@
       location = "group:Formatter/Formatter.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Network/Network.xcodeproj">
+      location = "group:Resources/Resources.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Resources/Resources.xcodeproj">
+      location = "group:Service/Service.xcodeproj">
    </FileRef>
 </Workspace>

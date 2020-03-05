@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Network
+import Service
 
 protocol HistoricalServicing {
     func getCurrencyRates(base: Currency, completion: @escaping (Result<Currencies, RequestError>) -> Void)

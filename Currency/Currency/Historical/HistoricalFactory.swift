@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Network
+import Service
 
 public final class HistoricalFactory {
     public static func make() -> UIViewController {

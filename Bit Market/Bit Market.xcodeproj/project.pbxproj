@@ -12,6 +12,8 @@
 		2F9EE2B4240F290A00FEB634 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F9EE2B3240F290A00FEB634 /* Assets.xcassets */; };
 		2F9EE2B7240F290A00FEB634 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9EE2B5240F290A00FEB634 /* LaunchScreen.storyboard */; };
 		2F9EE2C2240F290A00FEB634 /* Bit_MarketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE2C1240F290A00FEB634 /* Bit_MarketTests.swift */; };
+		2FB3F77C24107A0900695180 /* Currency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB3F77B24107A0900695180 /* Currency.framework */; };
+		2FB3F77D24107A0900695180 /* Currency.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB3F77B24107A0900695180 /* Currency.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2FB3F77D24107A0900695180 /* Currency.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +50,7 @@
 		2F9EE2BD240F290A00FEB634 /* Bit MarketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bit MarketTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9EE2C1240F290A00FEB634 /* Bit_MarketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bit_MarketTests.swift; sourceTree = "<group>"; };
 		2F9EE2C3240F290A00FEB634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FB3F77B24107A0900695180 /* Currency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Currency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB3F77C24107A0900695180 /* Currency.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +115,7 @@
 		2F9EE2FD240F30CE00FEB634 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2FB3F77B24107A0900695180 /* Currency.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -369,7 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 75Q35KU859;
+				DEVELOPMENT_TEAM = Q7836M9296;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -380,7 +386,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "MDT.Bit-Market";
+				PRODUCT_BUNDLE_IDENTIFIER = MDT.bitmarket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -392,7 +398,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 75Q35KU859;
+				DEVELOPMENT_TEAM = Q7836M9296;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -403,7 +409,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "MDT.Bit-Market";
+				PRODUCT_BUNDLE_IDENTIFIER = MDT.bitmarket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

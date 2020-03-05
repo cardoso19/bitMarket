@@ -32,7 +32,12 @@ final class HistoricalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configView()
         interactor.updateCriptoCurrencyHistoricalList()
+    }
+    
+    private func configView() {
+        view.backgroundColor = .red
     }
 }
 
