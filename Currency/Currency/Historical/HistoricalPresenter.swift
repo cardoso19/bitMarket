@@ -13,6 +13,7 @@ import Formatter
 protocol HistoricalPresenting {
     func presentCriptoTodayValue(_ today: (Date, Double))
     func presentCriptoCurrencyHistorical(_ historical: [Date: Double])
+    func presentError(message: String)
 }
 
 final class HistoricalPresenter {
@@ -54,5 +55,10 @@ extension HistoricalPresenter: HistoricalPresenting {
             return (formattedDate, formatedValue)
         }
         return formattedValues
+    }
+    
+    // MARK: - Error
+    func presentError(message: String) {
+        viewController?.displayError(message: message)
     }
 }

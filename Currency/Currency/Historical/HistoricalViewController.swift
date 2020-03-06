@@ -12,6 +12,7 @@ import Resources
 protocol HistoricalDisplay: AnyObject {
     func displayTodayValue(today: (String, String))
     func displayHistorical(list: [(String, String)])
+    func displayError(message: String)
 }
 
 final class HistoricalViewController: UIViewController {
@@ -21,8 +22,12 @@ final class HistoricalViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.sectionHeaderHeight = 100
         tableView.backgroundColor = UIColor.primary
+        tableView.separatorStyle = .none
+        tableView.register(
+            CriptoCurrencyTableViewCell.self,
+            forCellReuseIdentifier: String(describing: CriptoCurrencyTableViewCell.self)
+        )
         return tableView
     }()
     
@@ -51,12 +56,13 @@ final class HistoricalViewController: UIViewController {
         configViewHierarchy()
         configView()
         configConstraints()
+        LoaderView.show(on: self.view, animated: true)
         interactor.updateCriptoCurrencyHistoricalList()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        todayTimer = Timer.scheduledTimer(withTimeInterval: 60, repeats: true, block: { [weak self] timer in
+        todayTimer = Timer.scheduledTimer(withTimeInterval: 60, repeats: true, block: { [weak self] _ in
             self?.interactor.updateCurrentValue()
         })
     }
@@ -72,18 +78,20 @@ final class HistoricalViewController: UIViewController {
     
     private func configConstraints() {
         NSLayoutConstraint.activate([
-            listTableView.topAnchor.constraint(equalTo: view.compatibleSafeAreaLayoutGuide.topAnchor),
-            listTableView.bottomAnchor.constraint(equalTo: view.compatibleSafeAreaLayoutGuide.bottomAnchor),
+            listTableView.topAnchor.constraint(equalTo: view.topAnchor, constant: Spacing.space02),
+            listTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             listTableView.leadingAnchor.constraint(equalTo: view.compatibleSafeAreaLayoutGuide.leadingAnchor),
             listTableView.trailingAnchor.constraint(equalTo: view.compatibleSafeAreaLayoutGuide.trailingAnchor)
         ])
     }
     
     private func configView() {
+        navigationController?.navigationBar.barTintColor = UIColor.primary
         navigationController?.navigationBar.backgroundColor = UIColor.primary
+        navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.title = "Week"
-        view.backgroundColor = UIColor.secondary
+        navigationItem.title = "Week"
+        view.backgroundColor = UIColor.primary
     }
 }
 
@@ -95,7 +103,14 @@ extension HistoricalViewController: HistoricalDisplay {
     }
     
     func displayHistorical(list: [(String, String)]) {
+        LoaderView.hide(on: self.view, animated: true)
         self.list = list
+    }
+    
+    func displayError(message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
 }
 
@@ -118,20 +133,8 @@ extension HistoricalViewController: UITableViewDataSource {
             return nil
         }
         let day: (date: String, value: String) = list[section]
-        let view = UIView()
-        view.backgroundColor = UIColor.tertiary
-        let label = UILabel()
-        label.backgroundColor = .blue
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = UIColor.quaternary
-        view.addSubview(label)
-        NSLayoutConstraint.activate([
-            label.topAnchor.constraint(equalTo: view.topAnchor, constant: Spacing.space01),
-            label.bottomAnchor.constraint(equalTo: view.topAnchor, constant: Spacing.space01),
-            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            label.heightAnchor.constraint(equalToConstant: 20)
-        ])
-        label.text = day.date
+        let view = DateHeaderView(frame: .zero)
+        view.titleLabel.text = day.date
         return view
     }
     
@@ -140,19 +143,20 @@ extension HistoricalViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard !list.isEmpty else {
-            let cell = UITableViewCell()
-            cell.backgroundColor = UIColor.primary
-            cell.textLabel?.textColor = UIColor.quaternary
-            cell.textLabel?.text = " No content"
-            return cell
+        guard
+            !list.isEmpty,
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CriptoCurrencyTableViewCell.self)) as? CriptoCurrencyTableViewCell
+            else {
+                let cell = UITableViewCell()
+                cell.selectionStyle = .none
+                cell.backgroundColor = UIColor.primary
+                cell.textLabel?.textColor = UIColor.quaternary
+                cell.textLabel?.text = " No content"
+                return cell
         }
         let day: (date: String, value: String) = list[indexPath.section]
-        let cell = UITableViewCell()
-        cell.backgroundColor = UIColor.primary
-        cell.textLabel?.text = day.date + " - " + day.value
-        cell.textLabel?.textColor = UIColor.quaternary
-        cell.detailTextLabel?.textColor = UIColor.quaternary
+        cell.selectionStyle = .none
+        cell.rateLabel.text = day.value
         return cell
     }
 }

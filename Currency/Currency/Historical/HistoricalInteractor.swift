@@ -44,9 +44,8 @@ extension HistoricalInteractor: HistoricalInteracting {
             case let .success(todayValue):
                 self?.lastTodayValue = todayValue
                 completion(todayValue)
-            case .failure:
-                // TODO: - Present the alert error.
-                break
+            case let .failure(error):
+                self?.presenter.presentError(message: error.localizedDescription)
             }
         }
     }
@@ -76,9 +75,8 @@ extension HistoricalInteractor: HistoricalInteracting {
                 var historicalEUR = historicalUSD.bpi.compactMapValues({ self?.convert(value: $0, to: .eur) })
                 historicalEUR[Date()] = todayValue.bpi.eur.rateFloat
                 self?.presenter.presentCriptoCurrencyHistorical(historicalEUR)
-            case .failure:
-                // TODO: - Present alert error
-                break
+            case let .failure(error):
+                self?.presenter.presentError(message: error.localizedDescription)
             }
         }
     }
@@ -89,9 +87,8 @@ extension HistoricalInteractor: HistoricalInteracting {
             case let .success(currencyRates):
                 self?.currencyRates = currencyRates
                 self?.getHistoricalAndRateValues(todayValue: todayValue)
-            case .failure:
-                // TODO: - Present alert error
-                break
+            case let .failure(error):
+                self?.presenter.presentError(message: error.localizedDescription)
             }
         }
     }
