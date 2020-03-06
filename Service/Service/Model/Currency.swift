@@ -48,7 +48,7 @@ public enum Currency: String, Decodable {
         case .usd:
             return "en_US"
         case .eur:
-            return "de"
+            return "de_DE"
         case .gbp:
             return "en_GB"
         default:

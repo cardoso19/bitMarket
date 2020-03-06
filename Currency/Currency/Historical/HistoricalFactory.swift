@@ -18,6 +18,6 @@ public final class HistoricalFactory {
         let viewController = HistoricalViewController(interactor: interactor)
         router.viewController = viewController
         presenter.viewController = viewController
-        return viewController
+        return UINavigationController(rootViewController: viewController)
     }
 }

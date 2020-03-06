@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DC4E14F843FECB4AD1E7A04 /* Pods_Bit_MarketTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6673B5999078AE5633CABF /* Pods_Bit_MarketTests.framework */; };
+		1E39F4F9C7D82772EE2502D1 /* Pods_Bit_Market.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8B70FE6D83264BE85A4D9F /* Pods_Bit_Market.framework */; };
 		2F9EE2AB240F290800FEB634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE2AA240F290800FEB634 /* AppDelegate.swift */; };
 		2F9EE2AD240F290800FEB634 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE2AC240F290800FEB634 /* SceneDelegate.swift */; };
 		2F9EE2B4240F290A00FEB634 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F9EE2B3240F290A00FEB634 /* Assets.xcassets */; };
 		2F9EE2B7240F290A00FEB634 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9EE2B5240F290A00FEB634 /* LaunchScreen.storyboard */; };
 		2F9EE2C2240F290A00FEB634 /* Bit_MarketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE2C1240F290A00FEB634 /* Bit_MarketTests.swift */; };
-		2FB3F77C24107A0900695180 /* Currency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB3F77B24107A0900695180 /* Currency.framework */; };
-		2FB3F77D24107A0900695180 /* Currency.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB3F77B24107A0900695180 /* Currency.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FB3F7982410866300695180 /* Currency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB3F7972410866300695180 /* Currency.framework */; };
+		2FB3F7992410866300695180 /* Currency.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB3F7972410866300695180 /* Currency.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,13 +29,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2F57FDC9241043040038653B /* Embed Frameworks */ = {
+		2FB3F79A2410866300695180 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2FB3F77D24107A0900695180 /* Currency.framework in Embed Frameworks */,
+				2FB3F7992410866300695180 /* Currency.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,7 +52,13 @@
 		2F9EE2BD240F290A00FEB634 /* Bit MarketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bit MarketTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9EE2C1240F290A00FEB634 /* Bit_MarketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bit_MarketTests.swift; sourceTree = "<group>"; };
 		2F9EE2C3240F290A00FEB634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FB3F77B24107A0900695180 /* Currency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Currency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FB3F7972410866300695180 /* Currency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Currency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42032059A5CD2F75672133E0 /* Pods-Bit MarketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bit MarketTests.debug.xcconfig"; path = "../bitMarket/Pods/Target Support Files/Pods-Bit MarketTests/Pods-Bit MarketTests.debug.xcconfig"; sourceTree = "<group>"; };
+		969D21B4E7074176839DC354 /* Pods-Bit MarketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bit MarketTests.release.xcconfig"; path = "../bitMarket/Pods/Target Support Files/Pods-Bit MarketTests/Pods-Bit MarketTests.release.xcconfig"; sourceTree = "<group>"; };
+		AB8B70FE6D83264BE85A4D9F /* Pods_Bit_Market.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bit_Market.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8D15D0B5F768962656F2ADC /* Pods-Bit Market.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bit Market.debug.xcconfig"; path = "../bitMarket/Pods/Target Support Files/Pods-Bit Market/Pods-Bit Market.debug.xcconfig"; sourceTree = "<group>"; };
+		C97E3692FD4640FA324061D6 /* Pods-Bit Market.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bit Market.release.xcconfig"; path = "../bitMarket/Pods/Target Support Files/Pods-Bit Market/Pods-Bit Market.release.xcconfig"; sourceTree = "<group>"; };
+		FE6673B5999078AE5633CABF /* Pods_Bit_MarketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bit_MarketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FB3F77C24107A0900695180 /* Currency.framework in Frameworks */,
+				1E39F4F9C7D82772EE2502D1 /* Pods_Bit_Market.framework in Frameworks */,
+				2FB3F7982410866300695180 /* Currency.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,19 +75,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DC4E14F843FECB4AD1E7A04 /* Pods_Bit_MarketTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		264914C080C58DC16513B848 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8D15D0B5F768962656F2ADC /* Pods-Bit Market.debug.xcconfig */,
+				C97E3692FD4640FA324061D6 /* Pods-Bit Market.release.xcconfig */,
+				42032059A5CD2F75672133E0 /* Pods-Bit MarketTests.debug.xcconfig */,
+				969D21B4E7074176839DC354 /* Pods-Bit MarketTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		2F9EE29E240F290800FEB634 = {
 			isa = PBXGroup;
 			children = (
 				2F9EE2A9240F290800FEB634 /* Bit Market */,
 				2F9EE2C0240F290A00FEB634 /* Bit MarketTests */,
 				2F9EE2A8240F290800FEB634 /* Products */,
-				2F9EE2FD240F30CE00FEB634 /* Frameworks */,
+				264914C080C58DC16513B848 /* Pods */,
+				55E93E2F6CB7D426BA7E9136 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,10 +135,12 @@
 			path = "Bit MarketTests";
 			sourceTree = "<group>";
 		};
-		2F9EE2FD240F30CE00FEB634 /* Frameworks */ = {
+		55E93E2F6CB7D426BA7E9136 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2FB3F77B24107A0900695180 /* Currency.framework */,
+				2FB3F7972410866300695180 /* Currency.framework */,
+				AB8B70FE6D83264BE85A4D9F /* Pods_Bit_Market.framework */,
+				FE6673B5999078AE5633CABF /* Pods_Bit_MarketTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,10 +152,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F9EE2C6240F290A00FEB634 /* Build configuration list for PBXNativeTarget "Bit Market" */;
 			buildPhases = (
+				FF91707BAB3023CB742B8CA2 /* [CP] Check Pods Manifest.lock */,
 				2F9EE2A3240F290800FEB634 /* Sources */,
 				2F9EE2A4240F290800FEB634 /* Frameworks */,
 				2F9EE2A5240F290800FEB634 /* Resources */,
-				2F57FDC9241043040038653B /* Embed Frameworks */,
+				2FB3F79A2410866300695180 /* Embed Frameworks */,
+				2FB3F7962410863900695180 /* CocoaPods */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F9EE2C9240F290A00FEB634 /* Build configuration list for PBXNativeTarget "Bit MarketTests" */;
 			buildPhases = (
+				19BCEEE40E1021EBDAA020CB /* [CP] Check Pods Manifest.lock */,
 				2F9EE2B9240F290A00FEB634 /* Sources */,
 				2F9EE2BA240F290A00FEB634 /* Frameworks */,
 				2F9EE2BB240F290A00FEB634 /* Resources */,
@@ -178,7 +206,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2F9EE2A2240F290800FEB634 /* Build configuration list for PBXProject "Bit Market" */;
+			buildConfigurationList = 2F9EE2A2240F290800FEB634 /* Build configuration list for PBXProject "BitMarket" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -215,6 +243,71 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19BCEEE40E1021EBDAA020CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bit MarketTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FB3F7962410863900695180 /* CocoaPods */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = CocoaPods;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#\"${SRCROOT}/Pods/PodsResources.sh\"\n";
+		};
+		FF91707BAB3023CB742B8CA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bit Market-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F9EE2A3240F290800FEB634 /* Sources */ = {
@@ -372,6 +465,7 @@
 		};
 		2F9EE2C7240F290A00FEB634 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8D15D0B5F768962656F2ADC /* Pods-Bit Market.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -395,6 +489,7 @@
 		};
 		2F9EE2C8240F290A00FEB634 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C97E3692FD4640FA324061D6 /* Pods-Bit Market.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -418,6 +513,7 @@
 		};
 		2F9EE2CA240F290A00FEB634 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42032059A5CD2F75672133E0 /* Pods-Bit MarketTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -440,6 +536,7 @@
 		};
 		2F9EE2CB240F290A00FEB634 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 969D21B4E7074176839DC354 /* Pods-Bit MarketTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -463,7 +560,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F9EE2A2240F290800FEB634 /* Build configuration list for PBXProject "Bit Market" */ = {
+		2F9EE2A2240F290800FEB634 /* Build configuration list for PBXProject "BitMarket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F9EE2C4240F290A00FEB634 /* Debug */,

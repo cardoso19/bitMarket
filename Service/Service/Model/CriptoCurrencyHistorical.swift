@@ -7,7 +7,23 @@
 //
 
 import Foundation
+import Formatter
 
 public struct CriptoCurrencyHistorical: Decodable {
     public let bpi: [Date: Double]
+    
+    enum CodingKeys: String, CodingKey {
+        case bpi
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        let bpi = try values.decode([String: Double].self, forKey: .bpi)
+        var convertedBpi: [Date: Double] = [:]
+        for (key, value) in bpi {
+            guard let date = key.toDate(format: "yyyy-MM-dd") else { break }
+            convertedBpi[date] = value
+        }
+        self.bpi = convertedBpi
+    }
 }

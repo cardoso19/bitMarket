@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Bit Market/Bit Market.xcodeproj">
+      location = "group:BitMarket.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Currency/Currency.xcodeproj">
@@ -15,5 +15,8 @@
    </FileRef>
    <FileRef
       location = "group:Service/Service.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

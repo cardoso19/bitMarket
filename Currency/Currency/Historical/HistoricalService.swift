@@ -12,6 +12,7 @@ import Service
 protocol HistoricalServicing {
     func getCurrencyRates(base: Currency, completion: @escaping (Result<Currencies, RequestError>) -> Void)
     func getCriptoCurrencyHistorical(fromDate start: String, toDate end: String, completion: @escaping (Result<CriptoCurrencyHistorical, RequestError>) -> Void)
+    func getTodayCriptoCurrency(completion: @escaping (Result<TodayCriptoCurrency, RequestError>) -> Void)
 }
 
 final class HistoricalService {
@@ -38,6 +39,14 @@ extension HistoricalService: HistoricalServicing {
     
     func getCriptoCurrencyHistorical(fromDate start: String, toDate end: String, completion: @escaping (Result<CriptoCurrencyHistorical, RequestError>) -> Void) {
         requester.request(with: CriptoCurrencyRequest.list(start, end)) { [weak self] result in
+            self?.queue.async {
+                completion(result)
+            }
+        }
+    }
+    
+    func getTodayCriptoCurrency(completion: @escaping (Result<TodayCriptoCurrency, RequestError>) -> Void) {
+        requester.request(with: CriptoCurrencyRequest.current) { [weak self] result in
             self?.queue.async {
                 completion(result)
             }

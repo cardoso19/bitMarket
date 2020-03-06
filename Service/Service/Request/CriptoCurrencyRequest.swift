@@ -10,14 +10,24 @@ import Foundation
 
 public enum CriptoCurrencyRequest: RequestSetup {
     case list(String, String)
+    case current
+    
+    private var baseUrl: String {
+        return "https://api.coindesk.com/v1/bpi"
+    }
     
     public var url: String {
-        return "https://api.coindesk.com/v1/bpi/historical/close.json?"
+        switch self {
+        case .list:
+            return "\(baseUrl)/historical/close.json?"
+        case .current:
+            return "\(baseUrl)/currentprice.json"
+        }
     }
     
     public var httpMethod: HttpMethod {
         switch self {
-        case .list:
+        case .list, .current:
             return .get
         }
     }
@@ -29,6 +39,8 @@ public enum CriptoCurrencyRequest: RequestSetup {
                 "start": start,
                 "end": end
             ]
+        case .current:
+            return nil
         }
     }
 }

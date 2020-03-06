@@ -11,6 +11,7 @@ import Service
 import Formatter
 
 protocol HistoricalPresenting {
+    func presentCriptoTodayValue(_ today: (Date, Double))
     func presentCriptoCurrencyHistorical(_ historical: [Date: Double])
 }
 
@@ -27,12 +28,31 @@ final class HistoricalPresenter {
 
 // MARK: - HistoricalPresenting
 extension HistoricalPresenter: HistoricalPresenting {
-    // MARK: - Historical
-    func presentCriptoCurrencyHistorical(_ historical: [Date: Double]) {
-        
+    // MARK: - TodayValue
+    func presentCriptoTodayValue(_ today: (Date, Double)) {
+        let date = today.0.toString(format: "dd/MM/yyyy")
+        let value = today.1.convert(withLocale: Currency.eur.locale) ?? "-"
+        viewController?.displayTodayValue(today: (date, value))
     }
     
-    private func formatValues(historical: [Date: Double]) -> [Date: String] {
-        return historical.compactMapValues({ $0.convert(withLocale: Currency.eur.locale) })
+    // MARK: - Historical
+    func presentCriptoCurrencyHistorical(_ historical: [Date: Double]) {
+        let formattedHistorical = formatValues(historical: historical)
+        viewController?.displayHistorical(list: formattedHistorical)
+    }
+    
+    private func formatValues(historical: [Date: Double]) -> [(String, String)] {
+        let arrayValues = historical.map({($0, $1)}).sorted(by: { first, second in
+            return first.0.compare(second.0) == .orderedDescending
+        })
+        
+        let formattedValues = arrayValues.compactMap { (key, value) -> (String, String)? in
+            let formattedDate = key.toString(format: "dd/MM/yyyy")
+            guard let formatedValue = value.convert(withLocale: Currency.eur.locale)else {
+                return nil
+            }
+            return (formattedDate, formatedValue)
+        }
+        return formattedValues
     }
 }
