@@ -12,6 +12,10 @@ import Formatter
 public struct CriptoCurrencyHistorical: Decodable {
     public let bpi: [Date: Double]
     
+    public init(bpi: [Date: Double]) {
+        self.bpi = bpi
+    }
+    
     enum CodingKeys: String, CodingKey {
         case bpi
     }

@@ -11,6 +11,7 @@ import Foundation
 extension Double {
     /// Convert the value to a currency value.
     /// - Parameter locale: The currency's locale.
+    /// - Parameter hasCurrencySymbol: Define if the currency symbol will appear and the punctuation structure.
     public func convert(withLocale locale: String, hasCurrencySymbol: Bool = true) -> String? {
         let formatter = NumberFormatter()
         formatter.locale = Locale(identifier: locale)

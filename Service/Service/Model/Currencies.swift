@@ -11,6 +11,10 @@ import Foundation
 public struct Currencies: Decodable {
     public let rates: [Currency: Double]
     
+    public init(rates: [Currency: Double]) {
+        self.rates = rates
+    }
+    
     enum CodingKeys: String, CodingKey {
         case rates
     }

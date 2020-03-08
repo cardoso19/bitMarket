@@ -111,15 +111,13 @@ extension HistoricalInteractor: HistoricalInteracting {
     // MARK: - detailSelection
     func detailSelection(indexPath: IndexPath) {
         guard
-            let historicalUSD = historicalUSDCriptoCurrency,
-            let currencies = currencies
+            let lastTodayValue = lastTodayValue,
+            let currencies = currencies,
+            let historicalUSD = historicalUSDCriptoCurrency
             else {
                 return
         }
         if indexPath.section == 0 {
-            guard let lastTodayValue = lastTodayValue else {
-                return
-            }
             let criptoCurrency = CriptoCurrency(rates: [
                 .usd: lastTodayValue.bpi.usd.rateFloat,
                 .eur: lastTodayValue.bpi.eur.rateFloat,

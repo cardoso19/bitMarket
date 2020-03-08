@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		2F57FDCB241048450038653B /* Double+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F57FDCA241048450038653B /* Double+Currency.swift */; };
 		2F9EE237240F258300FEB634 /* Formatter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9EE22D240F258300FEB634 /* Formatter.framework */; };
-		2F9EE23C240F258300FEB634 /* FormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE23B240F258300FEB634 /* FormatterTests.swift */; };
+		2F9EE23C240F258300FEB634 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE23B240F258300FEB634 /* DateFormatterTests.swift */; };
 		2F9EE23E240F258300FEB634 /* Formatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F9EE230240F258300FEB634 /* Formatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F9EE32E24102DB400FEB634 /* String+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE32D24102DB400FEB634 /* String+Formatter.swift */; };
 		2F9EE33024102E5700FEB634 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE32F24102E5700FEB634 /* Date+Formatter.swift */; };
+		2FA2FB8E2415A55E009F4749 /* StringFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2FB8D2415A55E009F4749 /* StringFormatterTests.swift */; };
+		2FA2FB922415A6D9009F4749 /* DoubleCurrenciyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2FB912415A6D9009F4749 /* DoubleCurrenciyTests.swift */; };
 		2FEE0EA72411CD1700F27944 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE0EA62411CD1700F27944 /* UIView+Extension.swift */; };
 		34296F13EC5CEB1D9D19A299 /* Pods_Formatter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C806BC2F61FF412F85B5A7 /* Pods_Formatter.framework */; };
 		7769C0AEF9B637E6D7E5291B /* Pods_FormatterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424A41CA7EC3C2700E316805 /* Pods_FormatterTests.framework */; };
@@ -34,10 +36,12 @@
 		2F9EE230240F258300FEB634 /* Formatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Formatter.h; sourceTree = "<group>"; };
 		2F9EE231240F258300FEB634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F9EE236240F258300FEB634 /* FormatterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormatterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F9EE23B240F258300FEB634 /* FormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterTests.swift; sourceTree = "<group>"; };
+		2F9EE23B240F258300FEB634 /* DateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
 		2F9EE23D240F258300FEB634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F9EE32D24102DB400FEB634 /* String+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Formatter.swift"; sourceTree = "<group>"; };
 		2F9EE32F24102E5700FEB634 /* Date+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
+		2FA2FB8D2415A55E009F4749 /* StringFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFormatterTests.swift; sourceTree = "<group>"; };
+		2FA2FB912415A6D9009F4749 /* DoubleCurrenciyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleCurrenciyTests.swift; sourceTree = "<group>"; };
 		2FEE0EA62411CD1700F27944 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		424A41CA7EC3C2700E316805 /* Pods_FormatterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FormatterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5758336AFDF505ADD282CFCA /* Pods-Bit Market-Formatter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bit Market-Formatter.release.xcconfig"; path = "Target Support Files/Pods-Bit Market-Formatter/Pods-Bit Market-Formatter.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +107,7 @@
 		2F9EE23A240F258300FEB634 /* FormatterTests */ = {
 			isa = PBXGroup;
 			children = (
-				2F9EE23B240F258300FEB634 /* FormatterTests.swift */,
+				2FA2FB8C2415A3F5009F4749 /* Extension */,
 				2F9EE23D240F258300FEB634 /* Info.plist */,
 			);
 			path = FormatterTests;
@@ -116,6 +120,16 @@
 				2F9EE32D24102DB400FEB634 /* String+Formatter.swift */,
 				2F57FDCA241048450038653B /* Double+Currency.swift */,
 				2FEE0EA62411CD1700F27944 /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2FA2FB8C2415A3F5009F4749 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2F9EE23B240F258300FEB634 /* DateFormatterTests.swift */,
+				2FA2FB8D2415A55E009F4749 /* StringFormatterTests.swift */,
+				2FA2FB912415A6D9009F4749 /* DoubleCurrenciyTests.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -313,7 +327,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F9EE23C240F258300FEB634 /* FormatterTests.swift in Sources */,
+				2FA2FB922415A6D9009F4749 /* DoubleCurrenciyTests.swift in Sources */,
+				2F9EE23C240F258300FEB634 /* DateFormatterTests.swift in Sources */,
+				2FA2FB8E2415A55E009F4749 /* StringFormatterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

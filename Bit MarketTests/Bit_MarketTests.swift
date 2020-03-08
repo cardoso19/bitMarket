@@ -2,12 +2,11 @@
 //  Bit_MarketTests.swift
 //  Bit MarketTests
 //
-//  Created by Matheus Cardoso Kuhn on 03/03/20.
+//  Created by Matheus Cardoso Kuhn on 08/03/20.
 //  Copyright © 2020 Matheus Cardoso Kuhn. All rights reserved.
 //
 
 import XCTest
-@testable import Bit_Market
 
 class Bit_MarketTests: XCTestCase {
 
@@ -26,7 +25,7 @@ class Bit_MarketTests: XCTestCase {
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }
