@@ -13,14 +13,17 @@ import Formatter
 protocol HistoricalInteracting {
     func updateCurrentValue()
     func updateCriptoCurrencyHistoricalList()
+    func detailSelection(indexPath: IndexPath)
 }
 
 final class HistoricalInteractor {
     // MARK: - Variables
     private let service: HistoricalServicing
     private let presenter: HistoricalPresenting
-    private var currencyRates: Currencies?
+    private var currencies: Currencies?
     private var lastTodayValue: TodayCriptoCurrency?
+    private var historicalUSDCriptoCurrency: CriptoCurrencyHistorical?
+    private var dates: [Date] = []
     
     // MARK: - Life Cycle
     init(service: HistoricalServicing, presenter: HistoricalPresenting) {
@@ -57,7 +60,7 @@ extension HistoricalInteractor: HistoricalInteracting {
     }
     
     private func getHistoricalAndRateValues(todayValue: TodayCriptoCurrency) {
-        guard currencyRates != nil else {
+        guard currencies != nil else {
             currencyRatesRequest(todayValue: todayValue)
             return
         }
@@ -72,7 +75,14 @@ extension HistoricalInteractor: HistoricalInteracting {
         service.getCriptoCurrencyHistorical(fromDate: start, toDate: end) { [weak self] result in
             switch result {
             case let .success(historicalUSD):
-                var historicalEUR = historicalUSD.bpi.compactMapValues({ self?.convert(value: $0, to: .eur) })
+                self?.historicalUSDCriptoCurrency = historicalUSD
+                self?.dates = []
+                var historicalEUR = historicalUSD.bpi.compactMapValues({
+                    self?.convert(value: $0, to: .eur)
+                })
+                self?.dates = historicalUSD.bpi.keys.sorted(by: {
+                    return $0.compare($1) == .orderedDescending
+                })
                 historicalEUR[Date()] = todayValue.bpi.eur.rateFloat
                 self?.presenter.presentCriptoCurrencyHistorical(historicalEUR)
             case let .failure(error):
@@ -85,7 +95,7 @@ extension HistoricalInteractor: HistoricalInteracting {
         service.getCurrencyRates(base: .usd) { [weak self] result in
             switch result {
             case let .success(currencyRates):
-                self?.currencyRates = currencyRates
+                self?.currencies = currencyRates
                 self?.getHistoricalAndRateValues(todayValue: todayValue)
             case let .failure(error):
                 self?.presenter.presentError(message: error.localizedDescription)
@@ -94,7 +104,35 @@ extension HistoricalInteractor: HistoricalInteracting {
     }
     
     private func convert(value: Double, to currency: Currency) -> Double? {
-        guard let currencyValue = currencyRates?.rates[currency] else { return nil }
+        guard let currencyValue = currencies?.rates[currency] else { return nil }
         return value * currencyValue
+    }
+    
+    // MARK: - detailSelection
+    func detailSelection(indexPath: IndexPath) {
+        guard
+            let historicalUSD = historicalUSDCriptoCurrency,
+            let currencies = currencies
+            else {
+                return
+        }
+        if indexPath.section == 0 {
+            guard let lastTodayValue = lastTodayValue else {
+                return
+            }
+            let criptoCurrency = CriptoCurrency(rates: [
+                .usd: lastTodayValue.bpi.usd.rateFloat,
+                .eur: lastTodayValue.bpi.eur.rateFloat,
+                .gbp: lastTodayValue.bpi.gbp.rateFloat
+            ])
+            presenter.presentDetail(with: criptoCurrency, currencies: currencies, date: Date())
+        } else {
+            let date = dates[indexPath.section - 1]
+            guard let value = historicalUSD.bpi[date] else {
+                return
+            }
+            let criptoCurrency = CriptoCurrency(rates: [.usd: value])
+            presenter.presentDetail(with: criptoCurrency, currencies: currencies, date: date)
+        }
     }
 }

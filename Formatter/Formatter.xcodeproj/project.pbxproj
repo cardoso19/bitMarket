@@ -14,8 +14,8 @@
 		2F9EE32E24102DB400FEB634 /* String+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE32D24102DB400FEB634 /* String+Formatter.swift */; };
 		2F9EE33024102E5700FEB634 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE32F24102E5700FEB634 /* Date+Formatter.swift */; };
 		2FEE0EA72411CD1700F27944 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE0EA62411CD1700F27944 /* UIView+Extension.swift */; };
-		BB576E2FDF3C42D3EF4AFDFD /* Pods_FormatterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C9CDF113319A22EEF48812 /* Pods_FormatterTests.framework */; };
-		D606ABD6292109AAA6F42C8A /* Pods_Bit_Market_Formatter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1607472E80895B25F00AF704 /* Pods_Bit_Market_Formatter.framework */; };
+		34296F13EC5CEB1D9D19A299 /* Pods_Formatter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C806BC2F61FF412F85B5A7 /* Pods_Formatter.framework */; };
+		7769C0AEF9B637E6D7E5291B /* Pods_FormatterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424A41CA7EC3C2700E316805 /* Pods_FormatterTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1607472E80895B25F00AF704 /* Pods_Bit_Market_Formatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bit_Market_Formatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F57FDCA241048450038653B /* Double+Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Currency.swift"; sourceTree = "<group>"; };
 		2F9EE22D240F258300FEB634 /* Formatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Formatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9EE230240F258300FEB634 /* Formatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Formatter.h; sourceTree = "<group>"; };
@@ -40,11 +39,14 @@
 		2F9EE32D24102DB400FEB634 /* String+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Formatter.swift"; sourceTree = "<group>"; };
 		2F9EE32F24102E5700FEB634 /* Date+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
 		2FEE0EA62411CD1700F27944 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		424A41CA7EC3C2700E316805 /* Pods_FormatterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FormatterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5758336AFDF505ADD282CFCA /* Pods-Bit Market-Formatter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bit Market-Formatter.release.xcconfig"; path = "Target Support Files/Pods-Bit Market-Formatter/Pods-Bit Market-Formatter.release.xcconfig"; sourceTree = "<group>"; };
+		657406CC9D0A6BED52B3AC13 /* Pods-Formatter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Formatter.release.xcconfig"; path = "Target Support Files/Pods-Formatter/Pods-Formatter.release.xcconfig"; sourceTree = "<group>"; };
 		664CF049DD366A7D6B6C40A1 /* Pods-FormatterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FormatterTests.release.xcconfig"; path = "Target Support Files/Pods-FormatterTests/Pods-FormatterTests.release.xcconfig"; sourceTree = "<group>"; };
 		8ED5C4B247D6E8D4A78B30E0 /* Pods-Bit Market-Formatter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bit Market-Formatter.debug.xcconfig"; path = "Target Support Files/Pods-Bit Market-Formatter/Pods-Bit Market-Formatter.debug.xcconfig"; sourceTree = "<group>"; };
 		B2AE84E477797B1BE6C60315 /* Pods-FormatterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FormatterTests.debug.xcconfig"; path = "Target Support Files/Pods-FormatterTests/Pods-FormatterTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D9C9CDF113319A22EEF48812 /* Pods_FormatterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FormatterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C806BC2F61FF412F85B5A7 /* Pods_Formatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Formatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA0C345576708B613841413E /* Pods-Formatter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Formatter.debug.xcconfig"; path = "Target Support Files/Pods-Formatter/Pods-Formatter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D606ABD6292109AAA6F42C8A /* Pods_Bit_Market_Formatter.framework in Frameworks */,
+				34296F13EC5CEB1D9D19A299 /* Pods_Formatter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F9EE237240F258300FEB634 /* Formatter.framework in Frameworks */,
-				BB576E2FDF3C42D3EF4AFDFD /* Pods_FormatterTests.framework in Frameworks */,
+				7769C0AEF9B637E6D7E5291B /* Pods_FormatterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,8 +123,8 @@
 		6DCCE1D615393FD0CE8A3829 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1607472E80895B25F00AF704 /* Pods_Bit_Market_Formatter.framework */,
-				D9C9CDF113319A22EEF48812 /* Pods_FormatterTests.framework */,
+				C8C806BC2F61FF412F85B5A7 /* Pods_Formatter.framework */,
+				424A41CA7EC3C2700E316805 /* Pods_FormatterTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,6 +136,8 @@
 				5758336AFDF505ADD282CFCA /* Pods-Bit Market-Formatter.release.xcconfig */,
 				B2AE84E477797B1BE6C60315 /* Pods-FormatterTests.debug.xcconfig */,
 				664CF049DD366A7D6B6C40A1 /* Pods-FormatterTests.release.xcconfig */,
+				DA0C345576708B613841413E /* Pods-Formatter.debug.xcconfig */,
+				657406CC9D0A6BED52B3AC13 /* Pods-Formatter.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -284,7 +288,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Bit Market-Formatter-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Formatter-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -446,12 +450,12 @@
 		};
 		2F9EE242240F258300FEB634 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8ED5C4B247D6E8D4A78B30E0 /* Pods-Bit Market-Formatter.debug.xcconfig */;
+			baseConfigurationReference = DA0C345576708B613841413E /* Pods-Formatter.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 75Q35KU859;
+				DEVELOPMENT_TEAM = Q7836M9296;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -474,12 +478,12 @@
 		};
 		2F9EE243240F258300FEB634 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5758336AFDF505ADD282CFCA /* Pods-Bit Market-Formatter.release.xcconfig */;
+			baseConfigurationReference = 657406CC9D0A6BED52B3AC13 /* Pods-Formatter.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 75Q35KU859;
+				DEVELOPMENT_TEAM = Q7836M9296;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

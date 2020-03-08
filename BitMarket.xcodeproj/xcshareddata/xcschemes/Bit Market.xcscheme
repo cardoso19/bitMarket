@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2F9EE2A6240F290800FEB634"
-               BuildableName = "Bit Market.app"
-               BlueprintName = "Bit Market"
+               BuildableName = "BitMarket.app"
+               BlueprintName = "BitMarket"
                ReferencedContainer = "container:BitMarket.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F9EE2A6240F290800FEB634"
-            BuildableName = "Bit Market.app"
-            BlueprintName = "Bit Market"
+            BuildableName = "BitMarket.app"
+            BlueprintName = "BitMarket"
             ReferencedContainer = "container:BitMarket.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F9EE2A6240F290800FEB634"
-            BuildableName = "Bit Market.app"
-            BlueprintName = "Bit Market"
+            BuildableName = "BitMarket.app"
+            BlueprintName = "BitMarket"
             ReferencedContainer = "container:BitMarket.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

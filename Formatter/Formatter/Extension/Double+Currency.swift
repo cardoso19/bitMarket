@@ -16,6 +16,7 @@ extension Double {
         formatter.locale = Locale(identifier: locale)
         formatter.numberStyle = .currency
         if !hasCurrencySymbol {
+            formatter.locale = Locale(identifier: "de_DE")
             formatter.currencySymbol = ""
         }
         return formatter.string(from: self as NSNumber)

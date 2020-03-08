@@ -78,7 +78,7 @@ final class HistoricalViewController: UIViewController {
     
     private func configConstraints() {
         NSLayoutConstraint.activate([
-            listTableView.topAnchor.constraint(equalTo: view.topAnchor, constant: Spacing.space02),
+            listTableView.topAnchor.constraint(equalTo: view.compatibleSafeAreaLayoutGuide.topAnchor, constant: Spacing.space02),
             listTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             listTableView.leadingAnchor.constraint(equalTo: view.compatibleSafeAreaLayoutGuide.leadingAnchor),
             listTableView.trailingAnchor.constraint(equalTo: view.compatibleSafeAreaLayoutGuide.trailingAnchor)
@@ -88,7 +88,9 @@ final class HistoricalViewController: UIViewController {
     private func configView() {
         navigationController?.navigationBar.barTintColor = UIColor.primary
         navigationController?.navigationBar.backgroundColor = UIColor.primary
-        navigationController?.navigationBar.shadowImage = UIImage()
+        let attributes: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.quaternary ?? .black]
+        navigationController?.navigationBar.titleTextAttributes = attributes
+        navigationController?.navigationBar.largeTitleTextAttributes = attributes
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Week"
         view.backgroundColor = UIColor.primary
@@ -117,7 +119,7 @@ extension HistoricalViewController: HistoricalDisplay {
 // MARK: - UITableViewDelegate
 extension HistoricalViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO: - Present Next Screen
+        interactor.detailSelection(indexPath: indexPath)
     }
 }
 
@@ -143,20 +145,22 @@ extension HistoricalViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard
-            !list.isEmpty,
-            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CriptoCurrencyTableViewCell.self)) as? CriptoCurrencyTableViewCell
-            else {
-                let cell = UITableViewCell()
-                cell.selectionStyle = .none
-                cell.backgroundColor = UIColor.primary
-                cell.textLabel?.textColor = UIColor.quaternary
-                cell.textLabel?.text = " No content"
-                return cell
+        if list.isEmpty {
+            let cell = UITableViewCell()
+            cell.selectionStyle = .none
+            cell.backgroundColor = UIColor.primary
+            cell.textLabel?.textColor = UIColor.quaternary
+            cell.textLabel?.font = UIFont.systemFont(ofSize: 30, weight: .bold)
+            cell.textLabel?.text = "No content available"
+            return cell
+        } else if let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CriptoCurrencyTableViewCell.self)) as? CriptoCurrencyTableViewCell {
+            let day: (date: String, value: String) = list[indexPath.section]
+            cell.selectionStyle = .none
+            cell.titleLabel.text = "1 Btc"
+            cell.rateLabel.text = day.value
+            cell.lineView.isHidden = true
+            return cell
         }
-        let day: (date: String, value: String) = list[indexPath.section]
-        cell.selectionStyle = .none
-        cell.rateLabel.text = day.value
-        return cell
+        return UITableViewCell()
     }
 }

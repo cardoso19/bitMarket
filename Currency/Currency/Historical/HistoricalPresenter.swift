@@ -14,6 +14,7 @@ protocol HistoricalPresenting {
     func presentCriptoTodayValue(_ today: (Date, Double))
     func presentCriptoCurrencyHistorical(_ historical: [Date: Double])
     func presentError(message: String)
+    func presentDetail(with criptoCurrency: CriptoCurrency, currencies: Currencies, date: Date)
 }
 
 final class HistoricalPresenter {
@@ -60,5 +61,10 @@ extension HistoricalPresenter: HistoricalPresenting {
     // MARK: - Error
     func presentError(message: String) {
         viewController?.displayError(message: message)
+    }
+    
+    // MARK: - presentDetail
+    func presentDetail(with criptoCurrency: CriptoCurrency, currencies: Currencies, date: Date) {
+        router.routeDetail(with: criptoCurrency, currencies: currencies, date: date)
     }
 }

@@ -7,18 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DC4E14F843FECB4AD1E7A04 /* Pods_Bit_MarketTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6673B5999078AE5633CABF /* Pods_Bit_MarketTests.framework */; };
-		1E39F4F9C7D82772EE2502D1 /* Pods_Bit_Market.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8B70FE6D83264BE85A4D9F /* Pods_Bit_Market.framework */; };
+		2F950E032414A85E00FD5A6B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F950E022414A85E00FD5A6B /* NotificationCenter.framework */; };
+		2F950E062414A85E00FD5A6B /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F950E052414A85E00FD5A6B /* TodayViewController.swift */; };
+		2F950E092414A85E00FD5A6B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F950E072414A85E00FD5A6B /* MainInterface.storyboard */; };
+		2F950E0D2414A85E00FD5A6B /* BitMarketWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2F950E012414A85E00FD5A6B /* BitMarketWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2F950E162415541100FD5A6B /* Currency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F950E152415541100FD5A6B /* Currency.framework */; };
+		2F950E172415541100FD5A6B /* Currency.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F950E152415541100FD5A6B /* Currency.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F950E262415577D00FD5A6B /* Formatter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F950E252415577D00FD5A6B /* Formatter.framework */; };
+		2F950E282415577D00FD5A6B /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F950E272415577D00FD5A6B /* Resources.framework */; };
+		2F950E2A2415577D00FD5A6B /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F950E292415577D00FD5A6B /* Service.framework */; };
+		2F950E2D241559B700FD5A6B /* TodayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F950E2C241559B700FD5A6B /* TodayInteractor.swift */; };
+		2F950E2F24155A4B00FD5A6B /* TodayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F950E2E24155A4B00FD5A6B /* TodayService.swift */; };
+		2F950E3124155B2F00FD5A6B /* TodayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F950E3024155B2F00FD5A6B /* TodayPresenter.swift */; };
 		2F9EE2AB240F290800FEB634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE2AA240F290800FEB634 /* AppDelegate.swift */; };
 		2F9EE2AD240F290800FEB634 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE2AC240F290800FEB634 /* SceneDelegate.swift */; };
 		2F9EE2B4240F290A00FEB634 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F9EE2B3240F290A00FEB634 /* Assets.xcassets */; };
 		2F9EE2B7240F290A00FEB634 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9EE2B5240F290A00FEB634 /* LaunchScreen.storyboard */; };
 		2F9EE2C2240F290A00FEB634 /* Bit_MarketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EE2C1240F290A00FEB634 /* Bit_MarketTests.swift */; };
-		2FB3F7982410866300695180 /* Currency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB3F7972410866300695180 /* Currency.framework */; };
-		2FB3F7992410866300695180 /* Currency.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB3F7972410866300695180 /* Currency.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		40AD22C0BF16FDB4DF8E5428 /* Pods_BitMarket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31CC50E3B4B9BC90AB045C3 /* Pods_BitMarket.framework */; };
+		B7AA0C41E78A3E17C4DB47AA /* Pods_BitMarketTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8685617E61D02F683FD3344E /* Pods_BitMarketTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2F950E0B2414A85E00FD5A6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F9EE29F240F290800FEB634 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F950E002414A85E00FD5A6B;
+			remoteInfo = BitMarketWidget;
+		};
 		2F9EE2BE240F290A00FEB634 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2F9EE29F240F290800FEB634 /* Project object */;
@@ -29,13 +46,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2FB3F79A2410866300695180 /* Embed Frameworks */ = {
+		2F950E0E2414A85E00FD5A6B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2F950E0D2414A85E00FD5A6B /* BitMarketWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F950E14241551FF00FD5A6B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2FB3F7992410866300695180 /* Currency.framework in Embed Frameworks */,
+				2F950E172415541100FD5A6B /* Currency.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,31 +71,57 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2F9EE2A7240F290800FEB634 /* Bit Market.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bit Market.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F950E012414A85E00FD5A6B /* BitMarketWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BitMarketWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F950E022414A85E00FD5A6B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		2F950E052414A85E00FD5A6B /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		2F950E082414A85E00FD5A6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2F950E0A2414A85E00FD5A6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F950E152415541100FD5A6B /* Currency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Currency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F950E252415577D00FD5A6B /* Formatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Formatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F950E272415577D00FD5A6B /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F950E292415577D00FD5A6B /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F950E2C241559B700FD5A6B /* TodayInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayInteractor.swift; sourceTree = "<group>"; };
+		2F950E2E24155A4B00FD5A6B /* TodayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayService.swift; sourceTree = "<group>"; };
+		2F950E3024155B2F00FD5A6B /* TodayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayPresenter.swift; sourceTree = "<group>"; };
+		2F9EE2A7240F290800FEB634 /* BitMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9EE2AA240F290800FEB634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F9EE2AC240F290800FEB634 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2F9EE2B3240F290A00FEB634 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F9EE2B6240F290A00FEB634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F9EE2B8240F290A00FEB634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F9EE2BD240F290A00FEB634 /* Bit MarketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bit MarketTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9EE2BD240F290A00FEB634 /* BitMarketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitMarketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9EE2C1240F290A00FEB634 /* Bit_MarketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bit_MarketTests.swift; sourceTree = "<group>"; };
 		2F9EE2C3240F290A00FEB634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FB3F7972410866300695180 /* Currency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Currency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42032059A5CD2F75672133E0 /* Pods-Bit MarketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bit MarketTests.debug.xcconfig"; path = "../bitMarket/Pods/Target Support Files/Pods-Bit MarketTests/Pods-Bit MarketTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8685617E61D02F683FD3344E /* Pods_BitMarketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitMarketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89B37484C7BA8CAFD099D3B5 /* Pods-BitMarketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitMarketTests.release.xcconfig"; path = "../bitMarket/Pods/Target Support Files/Pods-BitMarketTests/Pods-BitMarketTests.release.xcconfig"; sourceTree = "<group>"; };
+		91AAAE00133E8CA67BA2CDFE /* Pods-BitMarket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitMarket.debug.xcconfig"; path = "../bitMarket/Pods/Target Support Files/Pods-BitMarket/Pods-BitMarket.debug.xcconfig"; sourceTree = "<group>"; };
 		969D21B4E7074176839DC354 /* Pods-Bit MarketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bit MarketTests.release.xcconfig"; path = "../bitMarket/Pods/Target Support Files/Pods-Bit MarketTests/Pods-Bit MarketTests.release.xcconfig"; sourceTree = "<group>"; };
-		AB8B70FE6D83264BE85A4D9F /* Pods_Bit_Market.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bit_Market.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8D15D0B5F768962656F2ADC /* Pods-Bit Market.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bit Market.debug.xcconfig"; path = "../bitMarket/Pods/Target Support Files/Pods-Bit Market/Pods-Bit Market.debug.xcconfig"; sourceTree = "<group>"; };
+		BCE4D254818B1CB5E5CEE07F /* Pods-BitMarketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitMarketTests.debug.xcconfig"; path = "../bitMarket/Pods/Target Support Files/Pods-BitMarketTests/Pods-BitMarketTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C97E3692FD4640FA324061D6 /* Pods-Bit Market.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bit Market.release.xcconfig"; path = "../bitMarket/Pods/Target Support Files/Pods-Bit Market/Pods-Bit Market.release.xcconfig"; sourceTree = "<group>"; };
-		FE6673B5999078AE5633CABF /* Pods_Bit_MarketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bit_MarketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D31CC50E3B4B9BC90AB045C3 /* Pods_BitMarket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitMarket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7D8C100064D8BEDE361C68C /* Pods-BitMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitMarket.release.xcconfig"; path = "../bitMarket/Pods/Target Support Files/Pods-BitMarket/Pods-BitMarket.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2F950DFE2414A85E00FD5A6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F950E262415577D00FD5A6B /* Formatter.framework in Frameworks */,
+				2F950E282415577D00FD5A6B /* Resources.framework in Frameworks */,
+				2F950E2A2415577D00FD5A6B /* Service.framework in Frameworks */,
+				2F950E032414A85E00FD5A6B /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2F9EE2A4240F290800FEB634 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E39F4F9C7D82772EE2502D1 /* Pods_Bit_Market.framework in Frameworks */,
-				2FB3F7982410866300695180 /* Currency.framework in Frameworks */,
+				2F950E162415541100FD5A6B /* Currency.framework in Frameworks */,
+				40AD22C0BF16FDB4DF8E5428 /* Pods_BitMarket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DC4E14F843FECB4AD1E7A04 /* Pods_Bit_MarketTests.framework in Frameworks */,
+				B7AA0C41E78A3E17C4DB47AA /* Pods_BitMarketTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,9 +143,34 @@
 				C97E3692FD4640FA324061D6 /* Pods-Bit Market.release.xcconfig */,
 				42032059A5CD2F75672133E0 /* Pods-Bit MarketTests.debug.xcconfig */,
 				969D21B4E7074176839DC354 /* Pods-Bit MarketTests.release.xcconfig */,
+				91AAAE00133E8CA67BA2CDFE /* Pods-BitMarket.debug.xcconfig */,
+				D7D8C100064D8BEDE361C68C /* Pods-BitMarket.release.xcconfig */,
+				BCE4D254818B1CB5E5CEE07F /* Pods-BitMarketTests.debug.xcconfig */,
+				89B37484C7BA8CAFD099D3B5 /* Pods-BitMarketTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		2F950E042414A85E00FD5A6B /* BitMarketWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2F950E2B241559A100FD5A6B /* Today */,
+				2F950E072414A85E00FD5A6B /* MainInterface.storyboard */,
+				2F950E0A2414A85E00FD5A6B /* Info.plist */,
+			);
+			path = BitMarketWidget;
+			sourceTree = "<group>";
+		};
+		2F950E2B241559A100FD5A6B /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				2F950E2C241559B700FD5A6B /* TodayInteractor.swift */,
+				2F950E3024155B2F00FD5A6B /* TodayPresenter.swift */,
+				2F950E2E24155A4B00FD5A6B /* TodayService.swift */,
+				2F950E052414A85E00FD5A6B /* TodayViewController.swift */,
+			);
+			path = Today;
 			sourceTree = "<group>";
 		};
 		2F9EE29E240F290800FEB634 = {
@@ -99,6 +178,7 @@
 			children = (
 				2F9EE2A9240F290800FEB634 /* Bit Market */,
 				2F9EE2C0240F290A00FEB634 /* Bit MarketTests */,
+				2F950E042414A85E00FD5A6B /* BitMarketWidget */,
 				2F9EE2A8240F290800FEB634 /* Products */,
 				264914C080C58DC16513B848 /* Pods */,
 				55E93E2F6CB7D426BA7E9136 /* Frameworks */,
@@ -108,8 +188,9 @@
 		2F9EE2A8240F290800FEB634 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F9EE2A7240F290800FEB634 /* Bit Market.app */,
-				2F9EE2BD240F290A00FEB634 /* Bit MarketTests.xctest */,
+				2F9EE2A7240F290800FEB634 /* BitMarket.app */,
+				2F9EE2BD240F290A00FEB634 /* BitMarketTests.xctest */,
+				2F950E012414A85E00FD5A6B /* BitMarketWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,9 +219,13 @@
 		55E93E2F6CB7D426BA7E9136 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2FB3F7972410866300695180 /* Currency.framework */,
-				AB8B70FE6D83264BE85A4D9F /* Pods_Bit_Market.framework */,
-				FE6673B5999078AE5633CABF /* Pods_Bit_MarketTests.framework */,
+				2F950E252415577D00FD5A6B /* Formatter.framework */,
+				2F950E272415577D00FD5A6B /* Resources.framework */,
+				2F950E292415577D00FD5A6B /* Service.framework */,
+				2F950E152415541100FD5A6B /* Currency.framework */,
+				2F950E022414A85E00FD5A6B /* NotificationCenter.framework */,
+				D31CC50E3B4B9BC90AB045C3 /* Pods_BitMarket.framework */,
+				8685617E61D02F683FD3344E /* Pods_BitMarketTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,29 +233,47 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F9EE2A6240F290800FEB634 /* Bit Market */ = {
+		2F950E002414A85E00FD5A6B /* BitMarketWidget */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F9EE2C6240F290A00FEB634 /* Build configuration list for PBXNativeTarget "Bit Market" */;
+			buildConfigurationList = 2F950E112414A85E00FD5A6B /* Build configuration list for PBXNativeTarget "BitMarketWidget" */;
 			buildPhases = (
-				FF91707BAB3023CB742B8CA2 /* [CP] Check Pods Manifest.lock */,
-				2F9EE2A3240F290800FEB634 /* Sources */,
-				2F9EE2A4240F290800FEB634 /* Frameworks */,
-				2F9EE2A5240F290800FEB634 /* Resources */,
-				2FB3F79A2410866300695180 /* Embed Frameworks */,
-				2FB3F7962410863900695180 /* CocoaPods */,
+				2F950DFD2414A85E00FD5A6B /* Sources */,
+				2F950DFE2414A85E00FD5A6B /* Frameworks */,
+				2F950DFF2414A85E00FD5A6B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Bit Market";
+			name = BitMarketWidget;
+			productName = BitMarketWidget;
+			productReference = 2F950E012414A85E00FD5A6B /* BitMarketWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		2F9EE2A6240F290800FEB634 /* BitMarket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F9EE2C6240F290A00FEB634 /* Build configuration list for PBXNativeTarget "BitMarket" */;
+			buildPhases = (
+				FF91707BAB3023CB742B8CA2 /* [CP] Check Pods Manifest.lock */,
+				2F9EE2A3240F290800FEB634 /* Sources */,
+				2F9EE2A4240F290800FEB634 /* Frameworks */,
+				2F9EE2A5240F290800FEB634 /* Resources */,
+				2F950E0E2414A85E00FD5A6B /* Embed App Extensions */,
+				2F950E14241551FF00FD5A6B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F950E0C2414A85E00FD5A6B /* PBXTargetDependency */,
+			);
+			name = BitMarket;
 			productName = "Bit Market";
-			productReference = 2F9EE2A7240F290800FEB634 /* Bit Market.app */;
+			productReference = 2F9EE2A7240F290800FEB634 /* BitMarket.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2F9EE2BC240F290A00FEB634 /* Bit MarketTests */ = {
+		2F9EE2BC240F290A00FEB634 /* BitMarketTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F9EE2C9240F290A00FEB634 /* Build configuration list for PBXNativeTarget "Bit MarketTests" */;
+			buildConfigurationList = 2F9EE2C9240F290A00FEB634 /* Build configuration list for PBXNativeTarget "BitMarketTests" */;
 			buildPhases = (
 				19BCEEE40E1021EBDAA020CB /* [CP] Check Pods Manifest.lock */,
 				2F9EE2B9240F290A00FEB634 /* Sources */,
@@ -182,9 +285,9 @@
 			dependencies = (
 				2F9EE2BF240F290A00FEB634 /* PBXTargetDependency */,
 			);
-			name = "Bit MarketTests";
+			name = BitMarketTests;
 			productName = "Bit MarketTests";
-			productReference = 2F9EE2BD240F290A00FEB634 /* Bit MarketTests.xctest */;
+			productReference = 2F9EE2BD240F290A00FEB634 /* BitMarketTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -197,6 +300,9 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Matheus Cardoso Kuhn";
 				TargetAttributes = {
+					2F950E002414A85E00FD5A6B = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					2F9EE2A6240F290800FEB634 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -219,13 +325,22 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F9EE2A6240F290800FEB634 /* Bit Market */,
-				2F9EE2BC240F290A00FEB634 /* Bit MarketTests */,
+				2F9EE2A6240F290800FEB634 /* BitMarket */,
+				2F9EE2BC240F290A00FEB634 /* BitMarketTests */,
+				2F950E002414A85E00FD5A6B /* BitMarketWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2F950DFF2414A85E00FD5A6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F950E092414A85E00FD5A6B /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2F9EE2A5240F290800FEB634 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,30 +375,12 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Bit MarketTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BitMarketTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		2FB3F7962410863900695180 /* CocoaPods */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = CocoaPods;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#\"${SRCROOT}/Pods/PodsResources.sh\"\n";
 		};
 		FF91707BAB3023CB742B8CA2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -300,7 +397,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Bit Market-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BitMarket-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -310,6 +407,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2F950DFD2414A85E00FD5A6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F950E3124155B2F00FD5A6B /* TodayPresenter.swift in Sources */,
+				2F950E2D241559B700FD5A6B /* TodayInteractor.swift in Sources */,
+				2F950E062414A85E00FD5A6B /* TodayViewController.swift in Sources */,
+				2F950E2F24155A4B00FD5A6B /* TodayService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2F9EE2A3240F290800FEB634 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -330,14 +438,27 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2F950E0C2414A85E00FD5A6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F950E002414A85E00FD5A6B /* BitMarketWidget */;
+			targetProxy = 2F950E0B2414A85E00FD5A6B /* PBXContainerItemProxy */;
+		};
 		2F9EE2BF240F290A00FEB634 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2F9EE2A6240F290800FEB634 /* Bit Market */;
+			target = 2F9EE2A6240F290800FEB634 /* BitMarket */;
 			targetProxy = 2F9EE2BE240F290A00FEB634 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		2F950E072414A85E00FD5A6B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F950E082414A85E00FD5A6B /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		2F9EE2B5240F290A00FEB634 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -349,6 +470,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2F950E0F2414A85E00FD5A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7836M9296;
+				INFOPLIST_FILE = BitMarketWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MDT.bitmarket.BitMarketWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F950E102414A85E00FD5A6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7836M9296;
+				INFOPLIST_FILE = BitMarketWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MDT.bitmarket.BitMarketWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		2F9EE2C4240F290A00FEB634 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -465,8 +624,9 @@
 		};
 		2F9EE2C7240F290A00FEB634 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8D15D0B5F768962656F2ADC /* Pods-Bit Market.debug.xcconfig */;
+			baseConfigurationReference = 91AAAE00133E8CA67BA2CDFE /* Pods-BitMarket.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q7836M9296;
@@ -489,8 +649,9 @@
 		};
 		2F9EE2C8240F290A00FEB634 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C97E3692FD4640FA324061D6 /* Pods-Bit Market.release.xcconfig */;
+			baseConfigurationReference = D7D8C100064D8BEDE361C68C /* Pods-BitMarket.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q7836M9296;
@@ -513,7 +674,7 @@
 		};
 		2F9EE2CA240F290A00FEB634 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42032059A5CD2F75672133E0 /* Pods-Bit MarketTests.debug.xcconfig */;
+			baseConfigurationReference = BCE4D254818B1CB5E5CEE07F /* Pods-BitMarketTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -536,7 +697,7 @@
 		};
 		2F9EE2CB240F290A00FEB634 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 969D21B4E7074176839DC354 /* Pods-Bit MarketTests.release.xcconfig */;
+			baseConfigurationReference = 89B37484C7BA8CAFD099D3B5 /* Pods-BitMarketTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -560,6 +721,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2F950E112414A85E00FD5A6B /* Build configuration list for PBXNativeTarget "BitMarketWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F950E0F2414A85E00FD5A6B /* Debug */,
+				2F950E102414A85E00FD5A6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2F9EE2A2240F290800FEB634 /* Build configuration list for PBXProject "BitMarket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -569,7 +739,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F9EE2C6240F290A00FEB634 /* Build configuration list for PBXNativeTarget "Bit Market" */ = {
+		2F9EE2C6240F290A00FEB634 /* Build configuration list for PBXNativeTarget "BitMarket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F9EE2C7240F290A00FEB634 /* Debug */,
@@ -578,7 +748,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F9EE2C9240F290A00FEB634 /* Build configuration list for PBXNativeTarget "Bit MarketTests" */ = {
+		2F9EE2C9240F290A00FEB634 /* Build configuration list for PBXNativeTarget "BitMarketTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F9EE2CA240F290A00FEB634 /* Debug */,

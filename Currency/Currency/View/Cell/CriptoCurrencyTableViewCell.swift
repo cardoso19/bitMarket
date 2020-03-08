@@ -14,7 +14,6 @@ final class CriptoCurrencyTableViewCell: UITableViewCell {
     private(set) lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "1 ฿"
         label.textColor = UIColor.quaternary
         label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
         label.setContentCompressionResistancePriority(.required, for: .horizontal)
@@ -27,6 +26,13 @@ final class CriptoCurrencyTableViewCell: UITableViewCell {
         label.textColor = UIColor.quaternary
         label.font = UIFont.systemFont(ofSize: 24)
         return label
+    }()
+    
+    private(set) lazy var lineView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = UIColor.secondary
+        return view
     }()
     
     // MARK: - Life Cycle
@@ -45,6 +51,7 @@ final class CriptoCurrencyTableViewCell: UITableViewCell {
     private func configViewHierarchy() {
         contentView.addSubview(titleLabel)
         contentView.addSubview(rateLabel)
+        contentView.addSubview(lineView)
     }
     
     private func configConstraints() {
@@ -58,7 +65,14 @@ final class CriptoCurrencyTableViewCell: UITableViewCell {
         NSLayoutConstraint.activate([
             rateLabel.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
             rateLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -Spacing.space02),
-            rateLabel.leadingAnchor.constraint(equalTo: titleLabel.trailingAnchor, constant: Spacing.space01)
+            rateLabel.leadingAnchor.constraint(greaterThanOrEqualTo: titleLabel.trailingAnchor, constant: Spacing.space01)
+        ])
+        
+        NSLayoutConstraint.activate([
+            lineView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            lineView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            lineView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            lineView.heightAnchor.constraint(equalToConstant: 1)
         ])
     }
     

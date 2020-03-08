@@ -1,6 +1,0 @@
-framework module Pods_Bit_Market_Resources {
-  umbrella header "Pods-Bit Market-Resources-umbrella.h"
-
-  export *
-  module * { export * }
-}
