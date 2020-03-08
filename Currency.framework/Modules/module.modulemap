@@ -1,0 +1,11 @@
+framework module Currency {
+  umbrella header "Currency.h"
+
+  export *
+  module * { export * }
+}
+
+module Currency.Swift {
+    header "Currency-Swift.h"
+    requires objc
+}
