@@ -11,11 +11,6 @@
 		2F950E062414A85E00FD5A6B /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F950E052414A85E00FD5A6B /* TodayViewController.swift */; };
 		2F950E092414A85E00FD5A6B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F950E072414A85E00FD5A6B /* MainInterface.storyboard */; };
 		2F950E0D2414A85E00FD5A6B /* Bit Market Current Value.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2F950E012414A85E00FD5A6B /* Bit Market Current Value.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2F950E162415541100FD5A6B /* Currency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F950E152415541100FD5A6B /* Currency.framework */; };
-		2F950E172415541100FD5A6B /* Currency.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F950E152415541100FD5A6B /* Currency.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2F950E262415577D00FD5A6B /* Formatter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F950E252415577D00FD5A6B /* Formatter.framework */; };
-		2F950E282415577D00FD5A6B /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F950E272415577D00FD5A6B /* Resources.framework */; };
-		2F950E2A2415577D00FD5A6B /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F950E292415577D00FD5A6B /* Service.framework */; };
 		2F950E2D241559B700FD5A6B /* TodayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F950E2C241559B700FD5A6B /* TodayInteractor.swift */; };
 		2F950E2F24155A4B00FD5A6B /* TodayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F950E2E24155A4B00FD5A6B /* TodayService.swift */; };
 		2F950E3124155B2F00FD5A6B /* TodayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F950E3024155B2F00FD5A6B /* TodayPresenter.swift */; };
@@ -24,6 +19,14 @@
 		2F9EE2B4240F290A00FEB634 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F9EE2B3240F290A00FEB634 /* Assets.xcassets */; };
 		2F9EE2B7240F290A00FEB634 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9EE2B5240F290A00FEB634 /* LaunchScreen.storyboard */; };
 		2FA2FB79241570A3009F4749 /* Bit_MarketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2FB78241570A3009F4749 /* Bit_MarketTests.swift */; };
+		2FF0F8D62415BB5800BAA44E /* Currency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF0F8D52415BB5800BAA44E /* Currency.framework */; };
+		2FF0F8D72415BB5800BAA44E /* Currency.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF0F8D52415BB5800BAA44E /* Currency.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FF0F8DB2415BB6100BAA44E /* Formatter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF0F8D82415BB6100BAA44E /* Formatter.framework */; };
+		2FF0F8DC2415BB6100BAA44E /* Formatter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF0F8D82415BB6100BAA44E /* Formatter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FF0F8DD2415BB6100BAA44E /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF0F8D92415BB6100BAA44E /* Resources.framework */; };
+		2FF0F8DE2415BB6100BAA44E /* Resources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF0F8D92415BB6100BAA44E /* Resources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FF0F8DF2415BB6100BAA44E /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF0F8DA2415BB6100BAA44E /* Service.framework */; };
+		2FF0F8E02415BB6100BAA44E /* Service.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF0F8DA2415BB6100BAA44E /* Service.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		40AD22C0BF16FDB4DF8E5428 /* Pods_BitMarket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31CC50E3B4B9BC90AB045C3 /* Pods_BitMarket.framework */; };
 		FB0B23C9D28A9EDF8B1E2A35 /* Pods_Bit_MarketTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16FD84D00DE84A2CAE27F4C /* Pods_Bit_MarketTests.framework */; };
 /* End PBXBuildFile section */
@@ -63,7 +66,20 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2F950E172415541100FD5A6B /* Currency.framework in Embed Frameworks */,
+				2FF0F8D72415BB5800BAA44E /* Currency.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FF0F8E12415BB6100BAA44E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2FF0F8E02415BB6100BAA44E /* Service.framework in Embed Frameworks */,
+				2FF0F8DE2415BB6100BAA44E /* Resources.framework in Embed Frameworks */,
+				2FF0F8DC2415BB6100BAA44E /* Formatter.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,10 +92,6 @@
 		2F950E052414A85E00FD5A6B /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		2F950E082414A85E00FD5A6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		2F950E0A2414A85E00FD5A6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F950E152415541100FD5A6B /* Currency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Currency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F950E252415577D00FD5A6B /* Formatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Formatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F950E272415577D00FD5A6B /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F950E292415577D00FD5A6B /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F950E2C241559B700FD5A6B /* TodayInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayInteractor.swift; sourceTree = "<group>"; };
 		2F950E2E24155A4B00FD5A6B /* TodayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayService.swift; sourceTree = "<group>"; };
 		2F950E3024155B2F00FD5A6B /* TodayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayPresenter.swift; sourceTree = "<group>"; };
@@ -94,6 +106,10 @@
 		2FA2FB76241570A2009F4749 /* Bit MarketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bit MarketTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA2FB78241570A3009F4749 /* Bit_MarketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bit_MarketTests.swift; sourceTree = "<group>"; };
 		2FA2FB7A241570A3009F4749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FF0F8D52415BB5800BAA44E /* Currency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Currency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FF0F8D82415BB6100BAA44E /* Formatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Formatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FF0F8D92415BB6100BAA44E /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FF0F8DA2415BB6100BAA44E /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42032059A5CD2F75672133E0 /* Pods-Bit MarketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bit MarketTests.debug.xcconfig"; path = "../bitMarket/Pods/Target Support Files/Pods-Bit MarketTests/Pods-Bit MarketTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8685617E61D02F683FD3344E /* Pods_BitMarketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitMarketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B37484C7BA8CAFD099D3B5 /* Pods-BitMarketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitMarketTests.release.xcconfig"; path = "../bitMarket/Pods/Target Support Files/Pods-BitMarketTests/Pods-BitMarketTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,10 +128,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F950E262415577D00FD5A6B /* Formatter.framework in Frameworks */,
-				2F950E282415577D00FD5A6B /* Resources.framework in Frameworks */,
-				2F950E2A2415577D00FD5A6B /* Service.framework in Frameworks */,
 				2F950E032414A85E00FD5A6B /* NotificationCenter.framework in Frameworks */,
+				2FF0F8DB2415BB6100BAA44E /* Formatter.framework in Frameworks */,
+				2FF0F8DF2415BB6100BAA44E /* Service.framework in Frameworks */,
+				2FF0F8DD2415BB6100BAA44E /* Resources.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +139,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F950E162415541100FD5A6B /* Currency.framework in Frameworks */,
 				40AD22C0BF16FDB4DF8E5428 /* Pods_BitMarket.framework in Frameworks */,
+				2FF0F8D62415BB5800BAA44E /* Currency.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,10 +240,10 @@
 		55E93E2F6CB7D426BA7E9136 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2F950E252415577D00FD5A6B /* Formatter.framework */,
-				2F950E272415577D00FD5A6B /* Resources.framework */,
-				2F950E292415577D00FD5A6B /* Service.framework */,
-				2F950E152415541100FD5A6B /* Currency.framework */,
+				2FF0F8D82415BB6100BAA44E /* Formatter.framework */,
+				2FF0F8D92415BB6100BAA44E /* Resources.framework */,
+				2FF0F8DA2415BB6100BAA44E /* Service.framework */,
+				2FF0F8D52415BB5800BAA44E /* Currency.framework */,
 				2F950E022414A85E00FD5A6B /* NotificationCenter.framework */,
 				D31CC50E3B4B9BC90AB045C3 /* Pods_BitMarket.framework */,
 				8685617E61D02F683FD3344E /* Pods_BitMarketTests.framework */,
@@ -246,6 +262,7 @@
 				2F950DFD2414A85E00FD5A6B /* Sources */,
 				2F950DFE2414A85E00FD5A6B /* Frameworks */,
 				2F950DFF2414A85E00FD5A6B /* Resources */,
+				2FF0F8E12415BB6100BAA44E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

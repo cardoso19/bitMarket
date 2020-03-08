@@ -14,18 +14,18 @@ public extension UIColor {
     
     static var primary: UIColor? {
         guard let bundle = bundle else { return nil }
-        return UIColor(named: "primary", in: bundle, compatibleWith: .current)
+        return UIColor(named: "Primary", in: bundle, compatibleWith: .current)
     }
     static var secondary: UIColor? {
         guard let bundle = bundle else { return nil }
-        return UIColor(named: "secondary", in: bundle, compatibleWith: .current)
+        return UIColor(named: "Secondary", in: bundle, compatibleWith: .current)
     }
     static var tertiary: UIColor? {
         guard let bundle = bundle else { return nil }
-        return UIColor(named: "tertiary", in: bundle, compatibleWith: .current)
+        return UIColor(named: "Tertiary", in: bundle, compatibleWith: .current)
     }
     static var quaternary: UIColor? {
         guard let bundle = bundle else { return nil }
-        return UIColor(named: "quaternary", in: bundle, compatibleWith: .current)
+        return UIColor(named: "Quaternary", in: bundle, compatibleWith: .current)
     }
 }

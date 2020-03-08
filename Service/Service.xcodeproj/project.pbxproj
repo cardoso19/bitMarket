@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F950E222415546C00FD5A6B /* Formatter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F950E212415546C00FD5A6B /* Formatter.framework */; };
-		2F950E232415546C00FD5A6B /* Formatter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F950E212415546C00FD5A6B /* Formatter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FB3F74B2410794200695180 /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB3F7412410794200695180 /* Service.framework */; };
 		2FB3F7502410794200695180 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3F74F2410794200695180 /* ServiceTests.swift */; };
 		2FB3F7522410794200695180 /* Service.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FB3F7442410794200695180 /* Service.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +21,8 @@
 		2FB3F79324107A7E00695180 /* DateDecodeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3F78924107A7E00695180 /* DateDecodeStrategy.swift */; };
 		2FB3F79424107A7E00695180 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3F78A24107A7E00695180 /* RequestError.swift */; };
 		2FEE0EA9241202B900F27944 /* TodayCriptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE0EA8241202B900F27944 /* TodayCriptoCurrency.swift */; };
+		2FF0F8EC2415BB7100BAA44E /* Formatter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF0F8EB2415BB7100BAA44E /* Formatter.framework */; };
+		2FF0F8ED2415BB7100BAA44E /* Formatter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF0F8EB2415BB7100BAA44E /* Formatter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5EBC6099807485405EBED22A /* Pods_ServiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0FD495482E7A24C02F5E7F /* Pods_ServiceTests.framework */; };
 		B68D5F8BD54442096DCD3B16 /* Pods_Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64FE66436545125A8DABA99D /* Pods_Service.framework */; };
 /* End PBXBuildFile section */
@@ -44,7 +44,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2F950E232415546C00FD5A6B /* Formatter.framework in Embed Frameworks */,
+				2FF0F8ED2415BB7100BAA44E /* Formatter.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,7 +53,6 @@
 
 /* Begin PBXFileReference section */
 		27BDE85F79CB46933FBFBB05 /* Pods-ServiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServiceTests.debug.xcconfig"; path = "Target Support Files/Pods-ServiceTests/Pods-ServiceTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2F950E212415546C00FD5A6B /* Formatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Formatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB3F7412410794200695180 /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB3F7442410794200695180 /* Service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
 		2FB3F7452410794200695180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,6 +70,7 @@
 		2FB3F78924107A7E00695180 /* DateDecodeStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateDecodeStrategy.swift; sourceTree = "<group>"; };
 		2FB3F78A24107A7E00695180 /* RequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 		2FEE0EA8241202B900F27944 /* TodayCriptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCriptoCurrency.swift; sourceTree = "<group>"; };
+		2FF0F8EB2415BB7100BAA44E /* Formatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Formatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E3C12F096FA886B8E195E5 /* Pods-ServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServiceTests.release.xcconfig"; path = "Target Support Files/Pods-ServiceTests/Pods-ServiceTests.release.xcconfig"; sourceTree = "<group>"; };
 		64FE66436545125A8DABA99D /* Pods_Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85757870C93546D4259D6BAD /* Pods-Bit Market-Service.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bit Market-Service.debug.xcconfig"; path = "Target Support Files/Pods-Bit Market-Service/Pods-Bit Market-Service.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,8 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F950E222415546C00FD5A6B /* Formatter.framework in Frameworks */,
 				B68D5F8BD54442096DCD3B16 /* Pods_Service.framework in Frameworks */,
+				2FF0F8EC2415BB7100BAA44E /* Formatter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +178,7 @@
 		C2987F66E2C6738C05B81702 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2F950E212415546C00FD5A6B /* Formatter.framework */,
+				2FF0F8EB2415BB7100BAA44E /* Formatter.framework */,
 				64FE66436545125A8DABA99D /* Pods_Service.framework */,
 				CC0FD495482E7A24C02F5E7F /* Pods_ServiceTests.framework */,
 			);
