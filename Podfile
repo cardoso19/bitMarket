@@ -5,8 +5,6 @@ use_frameworks!
 target 'BitMarket' do
   project 'BitMarket.project'
 
-  # pod "Currency", :path => "Currency"
-
   target 'BitMarketTests' do
     inherit! :search_paths
   end
@@ -14,10 +12,6 @@ end
 
 target 'Currency' do
   project 'Currency/Currency.project'
-
-  # pod "Formatter", :path => "Formatter"
-  # pod "Resources", :path => "Resources"
-  # pod "Service", :path => "Service"
 
   target 'CurrencyTests' do
     inherit! :search_paths
@@ -42,8 +36,6 @@ end
 
 target 'Service' do
   project 'Service/Service.project'
-
-  # pod "Formatter", :path => "Formatter"
 
   target 'ServiceTests' do
     inherit! :search_paths
