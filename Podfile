@@ -5,7 +5,7 @@ use_frameworks!
 target 'BitMarket' do
   project 'BitMarket.project'
 
-  target 'BitMarketTests' do
+  target 'Bit MarketTests' do
     inherit! :search_paths
   end
 end

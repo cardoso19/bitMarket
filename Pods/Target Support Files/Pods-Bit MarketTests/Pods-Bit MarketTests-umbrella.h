@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_BitMarketTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_BitMarketTestsVersionString[];
+FOUNDATION_EXPORT double Pods_Bit_MarketTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_Bit_MarketTestsVersionString[];
 
